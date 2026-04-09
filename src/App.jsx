@@ -1585,7 +1585,7 @@ export default function App() {
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-500 pb-2 mb-4 pt-8 md:pt-0 tracking-tight text-center">
-            El Tribunal Gaming <span className="text-pink-500 text-2xl md:text-3xl">v6.4.1</span>
+            El Tribunal Gaming <span className="text-pink-500 text-2xl md:text-3xl">v6.5.0</span>
           </h1>
           <p className="text-gray-400 text-lg md:text-xl font-medium text-center">Temporada {mode === 'coop' ? 'Cooperativa' : 'Individual'} 2026</p>
         </header>
@@ -1622,7 +1622,7 @@ export default function App() {
                 </button>
               </nav>
               <div className="mt-auto p-6 border-t border-gray-800">
-                <p className="text-[10px] font-black text-gray-600 uppercase tracking-widest text-center">Tribunal Gaming Engine v6.4.1</p>
+                <p className="text-[10px] font-black text-gray-600 uppercase tracking-widest text-center">Tribunal Gaming Engine v6.5.0</p>
               </div>
             </div>
           </div>
@@ -2032,18 +2032,18 @@ export default function App() {
                 </div>
               </div>
 
-              {/* v6.4.1 */}
+              {/* v6.5.0 */}
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-gray-900 bg-emerald-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 relative z-10">
                   <Play className="w-5 h-5" />
                 </div>
                 <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-gray-800/60 p-5 md:p-8 rounded-3xl border border-emerald-500/30 shadow-[0_0_20px_rgba(16,185,129,0.1)] transition-all">
                   <div className="flex items-center justify-between mb-1">
-                    <h3 className="font-bold text-lg text-white">v6.4.1 - Hotfix de Lanzamiento</h3>
+                    <h3 className="font-bold text-lg text-white">v6.5.0 - Hotfix de Lanzamiento</h3>
                     <span className="text-xs text-gray-500 font-bold px-2 py-1 bg-gray-800 rounded-lg whitespace-nowrap">9 ABR 2026</span>
                   </div>
                   <p className="text-sm text-gray-400 mt-2">
-                    v6.4.1 - Hotfix de Lanzamiento. Actualizada la ficha de Death Stranding 2: On The Beach con metadatos oficiales post-lanzamiento. Sincronizados tiempos de HLTB, enlaces de tienda y arte oficial del encabezado de Steam.
+                    v6.5.0 - Hotfix de Lanzamiento. Actualizada la ficha de Death Stranding 2: On The Beach con metadatos oficiales post-lanzamiento. Sincronizados tiempos de HLTB, enlaces de tienda y arte oficial del encabezado de Steam.
                   </p>
                 </div>
               </div>
