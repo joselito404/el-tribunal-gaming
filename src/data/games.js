@@ -80,3 +80,4 @@ export const GAMES = RAW_GAMES.map(g => ({
 }));
 
 export const PLAYERS = ['Jose', 'Mario', 'Iván', 'Carmen', 'Lázaro', 'Alejandro'];
+
