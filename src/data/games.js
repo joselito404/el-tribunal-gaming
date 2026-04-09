@@ -492,36 +492,16 @@ export const SINGLE_PLAYER_GAMES = [
     "description": "Seis años después del desastre biológico en Raccoon City, Leon S. Kennedy debe rescatar a la hija del presidente en un pueblo europeo."
   },
   {
-    "id": "tlou1",
-    "title": "The Last of Us Part I",
-    "isNew": true,
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888140/library_600x900_2x.jpg",
-    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888140/header.jpg",
-    "description": "Vive la experiencia definitiva del juego que definió una generación narrativa. En una civilización colapsada por el hongo Cordyceps, Joel, un contrabandista cansado del mundo, debe escoltar a Ellie a través de unos Estados Unidos devastados. Lo que comienza como un encargo se convierte en un viaje emocional brutal que explora la moralidad y la supervivencia humana.",
-    "minRequirements": {
-      "cpu": "AMD Ryzen 5 1500X / Intel Core i7-4770K",
-      "gpu": "AMD Radeon RX 470 (4 GB) / NVIDIA GeForce GTX 970 (4 GB)",
-      "ram": "16 GB",
-      "os": "Windows 10"
-    },
-    "hltb": {
-      "general": "16h",
-      "main": "14h",
-      "extras": "16h",
-      "completionist": "23h"
-    },
-    "links": {
-      "steam": "https://store.steampowered.com/app/1888140/The_Last_of_Us_Part_I/",
-      "metacritic": "https://www.metacritic.com/game/pc/the-last-of-us-part-i",
-      "hltb": "https://howlongtobeat.com/game/101111"
-    },
-    "genres": [
-      "NARRATIVO",
-      "ACCIÓN",
-      "AVENTURA",
-      "SIGILO",
-      "POSTAPOCALÍPTICO"
-    ]
+    id: "1888140",
+    title: "The Last of Us Part I",
+    metacritic: 89,
+    isNew: true,
+    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888140/library_600x900_2x.jpg",
+    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888140/header.jpg",
+    description: "En una civilización devastada por una pandemia fúngica, Joel, un contrabandista endurecido, debe escoltar a la joven Ellie a través de unos Estados Unidos postapocalípticos. Una obra maestra narrativa que explora la moralidad, el sacrificio y los límites de la supervivencia humana.",
+    genres: ["NARRATIVO", "ACCIÓN", "SIGILO"],
+    hltb: { main: "14h", extras: "16h", completionist: "23h" },
+    links: { steam: "https://store.steampowered.com/app/1888140/The_Last_of_Us_Part_I/" }
   },
   {
     "id": "portal2",
@@ -684,90 +664,39 @@ export const SINGLE_PLAYER_GAMES = [
     ]
   },
   {
-    "id": "expedition33",
-    "title": "Clair Obscur: Expedition 33",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/library_600x900_2x.jpg",
-    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1903340/header.jpg",
-    "description": "Un RPG por turnos reactivo ambientado en un mundo inspirado en la Belle Époque. Cada año, la Pintora despierta para condenar a una generación. Únete a la Expedición 33 en una misión desesperada para destruir el ciclo de la muerte en una obra que mezcla la estrategia clásica con mecánicas de combate en tiempo real.",
-    "minRequirements": {
-      "cpu": "Intel Core i5-8600K / AMD Ryzen 5 3600",
-      "gpu": "NVIDIA GTX 1070 / AMD RX 5700",
-      "ram": "16 GB",
-      "os": "Windows 10"
-    },
-    "genres": [
-      "ROL",
-      "POR TURNOS",
-      "FANTASÍA",
-      "ACCIÓN",
-      "AVENTURA"
-    ],
-    "hltb": {
-      "general": "48½h",
-      "main": "29h",
-      "extras": "45½h",
-      "completionist": "68h"
-    },
-    "links": {
-      "steam": "https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/",
-      "metacritic": "https://www.metacritic.com/game/pc/clair-obscur-expedition-33",
-      "hltb": "https://howlongtobeat.com/game/152016"
-    },
-    "isNew": true
+    id: "1903340",
+    title: "Clair Obscur: Expedition 33",
+    metacritic: null,
+    isNew: true,
+    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/library_600x900_2x.jpg",
+    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/header.jpg",
+    description: "Un RPG por turnos reactivo ambientado en un mundo inspirado en la Belle Époque. Únete a la Expedición 33 en una misión desesperada para destruir a la Pintora y romper el ciclo de la muerte en una obra que mezcla la estrategia clásica con mecánicas de combate en tiempo real.",
+    genres: ["RPG", "COMBATE POR TURNOS", "RICA HISTORIA", "FANTASÍA"],
+    hltb: { main: "30h", extras: "45h", completionist: "60h" },
+    links: { steam: "https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/" }
   },
   {
-    "id": "ballxpit",
-    "title": "Ball x pit",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3110390/library_600x900_2x.jpg",
-    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3110390/header.jpg",
-    "description": "Un título de plataformas laberíntico basado puramente en físicas mecánicas. Olvídate de los saltos automáticos; dependiendo de la inercia, rebotes programados y maniobras de extrema exactitud milimétrica, recorrerás trampas mortales que destrozarán tu paciencia y alimentarán tu determinación.",
-    "minRequirements": {},
-    "genres": [
-      "FÍSICAS",
-      "PUZZLES",
-      "INDIE",
-      "DIFICÍL",
-      "PRECISIÓN"
-    ],
-    "hltb": {
-      "general": "---",
-      "main": "---",
-      "extras": "---",
-      "completionist": "---"
-    },
-    "links": {
-      "steam": "https://store.steampowered.com/app/3110390/Ball_x_pit/",
-      "metacritic": "---",
-      "hltb": "---"
-    },
-    "isNew": true
+    id: "3110390",
+    title: "Ball x pit",
+    isNew: true,
+    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3110390/library_600x900_2x.jpg",
+    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3110390/header.jpg",
+    description: "Plataformas de precisión basado puramente en físicas. Controla una bola a través de laberintos donde el impulso y la gravedad son tus únicas herramientas. Cada nivel es un puzle cinético que exige paciencia y un dominio absoluto del control analógico.",
+    genres: ["FÍSICAS", "INDIE", "DIFÍCIL"],
+    hltb: { main: "2h", extras: "4h", completionist: "6h" },
+    links: { steam: "https://store.steampowered.com/app/3110390/Ball_x_pit/" }
   },
   {
-    "id": "yangtze",
-    "title": "Murders on the Yangtze River",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2274640/library_600x900_2x.jpg",
-    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2274640/header.jpg",
-    "description": "Experimenta un refinado thriller de misterio histórico en la China de la década de 1900. Surca el exótico río Yangtsé y adéntrate en complejos crímenes utilizando el fino arte de la deducción londinense en combinación con un fuerte contexto dramático sobre el engaño humano.",
-    "minRequirements": {},
-    "genres": [
-      "MISTERIO",
-      "DETECTIVE",
-      "NARRATIVO",
-      "INVESTIGACIÓN",
-      "HISTÓRICO"
-    ],
-    "hltb": {
-      "general": "15h",
-      "main": "12h",
-      "extras": "---",
-      "completionist": "20h"
-    },
-    "links": {
-      "steam": "https://store.steampowered.com/app/2274640/Murders_on_the_Yangtze_River/",
-      "metacritic": "---",
-      "hltb": "https://howlongtobeat.com/game/144185"
-    },
-    "isNew": true
+    id: "2274640",
+    title: "Murders on the Yangtze River",
+    metacritic: 83,
+    isNew: true,
+    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2274640/library_600x900_2x.jpg",
+    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2274640/header.jpg",
+    description: "Una aventura de misterio al estilo 'whodunnit' ambientada en la China de principios del siglo XX. Investiga crímenes imposibles a bordo de un barco por el río Yangtsé utilizando el razonamiento lógico para desvelar una conspiración histórica.",
+    genres: ["DETECTIVE", "AVENTURA", "PUZLES", "MISTERIO", "RICA HISTORIA"],
+    hltb: { main: "16h", extras: "17h", completionist: "18h" },
+    links: { steam: "https://store.steampowered.com/app/2274640/Murders_on_the_Yangtze_River/" }
   },
   {
     "id": "plague_requiem",
@@ -834,36 +763,16 @@ export const SINGLE_PLAYER_GAMES = [
     "isNew": true
   },
   {
-    "id": "nobodywantsdie",
-    "title": "Nobody Wants to Die",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1939970/library_600x900_2x.jpg",
-    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1939970/header.jpg",
-    "description": "Entra en los empapados callejones de la distópica ciudad de Nueva York del año 2329. Enfrentado al crudo abismo del neonoir, manejarás la neuroprótesis temporal para avanzar, retroceder e investigar macabros campos hiperrealistas, buscando verdades siniestras que las corporaciones desean omitir.",
-    "minRequirements": {
-      "cpu": "Intel Core i3-8100 / AMD Ryzen 3 2300X",
-      "gpu": "NVIDIA GeForce GTX 1660 Super / AMD Radeon RX 5600 XT",
-      "ram": "16 GB",
-      "os": "Windows 10"
-    },
-    "genres": [
-      "DETECTIVE",
-      "CYBERPUNK",
-      "NARRATIVO",
-      "NOIR",
-      "MISTERIO"
-    ],
-    "hltb": {
-      "general": "6h",
-      "main": "5h",
-      "extras": "6h",
-      "completionist": "7h"
-    },
-    "links": {
-      "steam": "https://store.steampowered.com/app/1939970/Nobody_Wants_to_Die/",
-      "metacritic": "https://www.metacritic.com/game/pc/nobody-wants-to-die",
-      "hltb": "https://howlongtobeat.com/game/146059"
-    },
-    "isNew": true
+    id: "1939970",
+    title: "Nobody Wants to Die",
+    metacritic: 78,
+    isNew: true,
+    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1939970/library_600x900_2x.jpg",
+    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1939970/header.jpg",
+    description: "Sumérgete en una Nueva York distópica del año 2329. Encarna al detective James Karra en una investigación noir ultra-tecnológica utilizando herramientas de manipulación temporal para reconstruir escenas del crimen y dar caza a un asesino en serie.",
+    genres: ["DETECTIVE", "CYBERPUNK", "NOIR", "NARRATIVO"],
+    hltb: { main: "5h", extras: "6h", completionist: "7h" },
+    links: { steam: "https://store.steampowered.com/app/1939970/Nobody_Wants_to_Die/" }
   },
   {
     "id": "deathstranding_dc",
@@ -1006,30 +915,15 @@ export const SINGLE_PLAYER_GAMES = [
     "isNew": true
   },
   {
-    "id": "ninesols",
-    "title": "Nine Sols",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809540/library_600x900_2x.jpg",
-    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809540/header.jpg",
-    "description": "Un metroidvania 2D dibujado a mano en un universo 'Taopunk' que fusiona el ciberpunk con el taoísmo. Sigue al guerrero Yi en su cruzada de venganza contra los 9 Soles en un sistema de combate implacable basado en desvíos (parry) que exige una precisión milimétrica.",
-    "minRequirements": {},
-    "genres": [
-      "ACCIÓN",
-      "AVENTURA",
-      "PLATAFORMAS",
-      "INDIE",
-      "DIFICÍL"
-    ],
-    "hltb": {
-      "general": "26h",
-      "main": "23h",
-      "extras": "---",
-      "completionist": "38h"
-    },
-    "links": {
-      "steam": "https://store.steampowered.com/app/1809540/Nine_Sols/",
-      "metacritic": "---",
-      "hltb": "https://howlongtobeat.com/game/112812"
-    },
-    "isNew": true
+    id: "1809540",
+    title: "Nine Sols",
+    metacritic: 83,
+    isNew: true,
+    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809540/library_600x900_2x.jpg",
+    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809540/header.jpg",
+    description: "Un metroidvania 2D de estética 'Taopunk' que fusiona el ciberpunk con el taoísmo. Con un sistema de combate inspirado en Sekiro basado en el 'parry', deberás enfrentarte a los 9 Soles en una cruzada de venganza dibujada a mano.",
+    genres: ["METROIDVANIA", "ACCIÓN", "DIFÍCIL", "SOULSLIKE"],
+    hltb: { main: "21h", extras: "30h", completionist: "38h" },
+    links: { steam: "https://store.steampowered.com/app/1809540/Nine_Sols/" }
   }
 ];

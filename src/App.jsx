@@ -1,16 +1,17 @@
-import { SINGLE_PLAYER_GAMES } from './data/games';
 import React, { useState, useMemo, useEffect } from 'react';
+import Header from './components/Header';
+import GameCard from './components/GameCard';
+import { SINGLE_PLAYER_GAMES, GAMES, PLAYERS } from './data/games';
 import { 
+  Filter, ListFilter, Trophy, Clock,
   Users, BarChart3, History, Menu, X, Wifi, WifiOff, LogIn, ChevronLeft, 
-  ShieldAlert, CheckCircle, AlertTriangle, Play, Trophy, Star, Clock, Info, 
-  ExternalLink, Search, Filter, ArrowUp, ArrowDown, Gamepad2, Layers, BookOpen, 
-  Brain, Dices, Wallet, RotateCcw, Share2, Heart, Zap, MessageSquare, Trash2, Smile 
+  ShieldAlert, CheckCircle, AlertTriangle, Play, Star, Info, 
+  ExternalLink, Search, ArrowUp, ArrowDown, Gamepad2, Layers, BookOpen, 
+  Brain, Dices, Wallet, RotateCcw, Share2, Heart, Zap, MessageSquare, Trash2, Smile
 } from 'lucide-react';
 import { signInAnonymously, onAuthStateChanged } from 'firebase/auth';
 import { collection, doc, setDoc, onSnapshot, updateDoc, deleteField } from 'firebase/firestore';
 import { db, auth } from './firebase';
-
-import { GAMES, PLAYERS } from './data/games';
 
 const EMOJI_PALETTE = ["🔥","🐕","👾","💀","👑","💩"];
 
@@ -20,7 +21,7 @@ const EMOJI_PALETTE = ["🔥","🐕","👾","💀","👑","💩"];
 // ----------------------------------------------------------------------------
 // RENDER: TARJETA DE JUEGO (STEAM MODE)
 // ----------------------------------------------------------------------------
-const GameCard = ({ game, score, onVote }) => {
+const CoopGameCard = ({ game, score, onVote }) => {
   const players = ['Jose', 'Mario', 'Iván', 'Carmen', 'Lázaro', 'Alejandro'];
   const isProhibida = game.category === 'Zona Prohibida';
   const isGuerreros = game.category === 'Guerreros';
@@ -128,6 +129,26 @@ export default function App() {
   const [librarySort, setLibrarySort] = useState('news'); // 'news', 'top', 'alpha'
   const [libraryGenreFilter, setLibraryGenreFilter] = useState('all');
   const [reactionDropdownOpen, setReactionDropdownOpen] = useState(null);
+
+  const [sortBy, setSortBy] = useState('new');
+  const [minMetacritic, setMinMetacritic] = useState(0);
+
+  const processedSinglePlayerGames = useMemo(() => {
+    let result = [...SINGLE_PLAYER_GAMES];
+    if (minMetacritic > 0) result = result.filter(g => (g.metacritic || 0) >= minMetacritic);
+    
+    result.sort((a, b) => {
+      if (sortBy === 'duration') {
+        const timeA = parseInt(a.hltb?.main) || 999;
+        const timeB = parseInt(b.hltb?.main) || 999;
+        return timeA - timeB;
+      }
+      if (sortBy === 'metacritic') return (b.metacritic || 0) - (a.metacritic || 0);
+      if (sortBy === 'new') return a.isNew === b.isNew ? 0 : a.isNew ? -1 : 1;
+      return 0;
+    });
+    return result;
+  }, [sortBy, minMetacritic, SINGLE_PLAYER_GAMES]);
 
   // ESTADOS DE LA RULETA
   const [isSpinning, setIsSpinning] = useState(false);
@@ -637,7 +658,7 @@ export default function App() {
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-500 pb-2 mb-4 pt-8 md:pt-0 tracking-tight text-center">
-            El Tribunal Gaming <span className="text-pink-500 text-2xl md:text-3xl">v6.6.0</span>
+            El Tribunal Gaming <span className="text-pink-500 text-2xl md:text-3xl">v6.7.0</span>
           </h1>
           <p className="text-gray-400 text-lg md:text-xl font-medium text-center">Temporada {mode === 'coop' ? 'Cooperativa' : 'Individual'} 2026</p>
         </header>
@@ -674,7 +695,7 @@ export default function App() {
                 </button>
               </nav>
               <div className="mt-auto p-6 border-t border-gray-800">
-                <p className="text-[10px] font-black text-gray-600 uppercase tracking-widest text-center">Tribunal Gaming Engine v6.6.0</p>
+                <p className="text-[10px] font-black text-gray-600 uppercase tracking-widest text-center">Tribunal Gaming Engine v6.7.0</p>
               </div>
             </div>
           </div>
@@ -786,7 +807,7 @@ export default function App() {
             </div>
 
             {GAMES.filter(game => !hideVoted || votedSnapshot.includes(game.id)).map(game => (
-              <GameCard
+              <CoopGameCard
                 key={game.id}
                 game={game}
                 score={getCurrentVote(game.id)}
@@ -1067,6 +1088,22 @@ export default function App() {
           <div className="bg-gray-900/50 backdrop-blur-xl rounded-3xl p-6 md:p-10 shadow-2xl border border-gray-800 max-w-4xl mx-auto text-gray-300">
             <h2 className="text-3xl font-black text-white mb-8 border-b border-gray-800 pb-4">Bitácora de Versiones</h2>
             <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-orange-500/50 before:via-gray-800/50 before:to-gray-800/20">
+
+                                          {/* v6.7.0 */}
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-gray-900 bg-indigo-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 relative z-10">
+                  <CheckCircle className="w-5 h-5" />
+                </div>
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-gray-800/60 p-5 md:p-8 rounded-3xl border border-indigo-500/30 shadow-[0_0_20px_rgba(99,102,241,0.1)] transition-all">
+                  <div className="flex items-center justify-between mb-1">
+                    <h3 className="font-bold text-lg text-white">v6.7.0 - Integración Segura de Arquitectura</h3>
+                    <span className="text-xs text-gray-500 font-bold px-2 py-1 bg-gray-800 rounded-lg whitespace-nowrap">10 ABR 2026</span>
+                  </div>
+                  <p className="text-sm text-gray-400 mt-2">
+                    Componentización de Header y GameCard. Implementación del motor de ordenación inteligente por duración y sistema de filtros críticos por puntuación Metacritic en el entorno Single Player.
+                  </p>
+                </div>
+              </div>
 
                                           {/* v6.4.1 */}
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
@@ -2764,130 +2801,64 @@ export default function App() {
                 );
               })()
             ) : (
-              <div className="max-w-7xl mx-auto">
-                {/* BARRA SUPERIOR PRO */}
-                <div className="flex flex-col xl:flex-row gap-6 mb-12 items-center justify-between bg-gray-900/60 p-6 rounded-3xl border border-gray-800 shadow-xl">
-                  
-                  <div className="relative w-full xl:w-96 group shrink-0">
-                    <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 group-focus-within:text-indigo-500 transition-colors" />
-                    <input
-                      type="text"
-                      placeholder="Buscar título o lore..."
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                      className="w-full bg-gray-950 border border-gray-700/50 rounded-2xl py-3 pl-12 pr-6 text-white font-medium focus:outline-none focus:border-indigo-500/50 transition-all placeholder:text-gray-600 shadow-inner"
-                    />
-                  </div>
+              <div className="max-w-7xl mx-auto px-4 py-12">
+  <div className="flex flex-col md:flex-row gap-6 mb-12 items-center justify-between bg-gray-800/30 p-6 rounded-3xl border border-white/5">
+    <div className="flex items-center gap-3">
+      <ListFilter className="w-4 h-4 text-indigo-400" />
+      <div className="flex bg-gray-900/50 p-1 rounded-xl border border-white/5">
+        {[
+          { id: 'new', label: 'Novedades' },
+          { id: 'duration', label: 'Más cortos', icon: Clock },
+          { id: 'metacritic', label: 'Mejor Nota', icon: Trophy }
+        ].map((btn) => (
+          <button
+            key={btn.id}
+            onClick={() => setSortBy(btn.id)}
+            className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+              sortBy === btn.id ? 'bg-indigo-500 text-white shadow-lg' : 'text-gray-500 hover:text-white'
+            }`}
+          >
+            {btn.icon && <btn.icon className="w-3 h-3" />}
+            {btn.label}
+          </button>
+        ))}
+      </div>
+    </div>
+    <div className="flex items-center gap-3">
+      <Filter className="w-4 h-4 text-gray-500" />
+      <select 
+        value={minMetacritic}
+        onChange={(e) => setMinMetacritic(Number(e.target.value))}
+        className="bg-gray-900 border border-white/10 rounded-xl px-4 py-2 text-sm font-bold text-indigo-400 focus:outline-none focus:border-indigo-500 transition-colors"
+      >
+        <option value={0}>Todos los juegos</option>
+        <option value={80}>Metacritic: +80</option>
+        <option value={85}>Metacritic: +85</option>
+        <option value={90}>Metacritic: +90</option>
+        <option value={95}>Metacritic: +95</option>
+      </select>
+    </div>
+  </div>
 
-                  <div className="flex flex-col sm:flex-row gap-4 w-full xl:w-auto">
-                    <div className="flex bg-gray-950 p-1.5 rounded-2xl border border-gray-800 shrink-0">
-                      {[ 
-                        { id: 'news', label: 'Novedades' },
-                        { id: 'top', label: 'Mejor Valorados' },
-                        { id: 'alpha', label: 'A-Z' }
-                      ].map(opt => (
-                        <button 
-                          key={opt.id}
-                          onClick={() => setLibrarySort(opt.id)}
-                          className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider transition-all ${librarySort === opt.id ? 'bg-indigo-600 text-white shadow-md' : 'text-gray-500 hover:text-gray-300'}`}
-                        >
-                          {opt.label}
-                        </button>
-                      ))}
-                    </div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+    {processedSinglePlayerGames.map(game => (
+      <div key={game.id} onClick={() => {
+        setScrollPos(window.scrollY);
+        setSelectedSingleId(game.id);
+        window.scrollTo(0, 0);
+      }} className="cursor-pointer">
+        <GameCard game={game} />
+      </div>
+    ))}
+  </div>
 
-                    <select
-                      value={libraryGenreFilter}
-                      onChange={(e) => setLibraryGenreFilter(e.target.value)}
-                      className="w-full sm:w-48 bg-gray-950 border border-gray-800 text-gray-400 font-bold text-xs uppercase tracking-widest px-4 py-3 rounded-2xl focus:outline-none focus:border-indigo-500/50 transition-colors cursor-pointer appearance-none"
-                    >
-                      <option value="all">TODOS LOS GÉNEROS</option>
-                      {Array.from(new Set(SINGLE_PLAYER_GAMES.flatMap(g => g.genres || []))).map(genre => (
-                        <option key={genre} value={genre}>{genre}</option>
-                      ))}
-                    </select>
-                  </div>
-
-                </div>
-
-                {/* GRID DE JUEGOS PRO */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
-                  {(() => {
-                    let filteredLibrary = SINGLE_PLAYER_GAMES.filter(game => {
-                      const matchesSearch = game.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                                            (game.description && game.description.toLowerCase().includes(searchQuery.toLowerCase())) ||
-                                            (game.summary && game.summary.toLowerCase().includes(searchQuery.toLowerCase()));
-                      const matchesGenre = libraryGenreFilter === 'all' || (game.genres && game.genres.includes(libraryGenreFilter));
-                      return matchesSearch && matchesGenre;
-                    });
-
-                    if (librarySort === 'news') {
-                      filteredLibrary.sort((a, b) => (a.isNew === b.isNew) ? 0 : a.isNew ? -1 : 1);
-                    } else if (librarySort === 'alpha') {
-                      filteredLibrary.sort((a, b) => a.title.localeCompare(b.title));
-                    } else if (librarySort === 'top') {
-                      filteredLibrary.sort((a, b) => {
-                        const getAvg = (id) => {
-                          const gameRev = userReviews[id] || {};
-                          const valid = PLAYERS.map(p => gameRev[p]).filter(r => r && !r.noVote && r.note >= 0);
-                          return valid.length > 0 ? (valid.reduce((sum, r) => sum + r.note, 0) / valid.length) : 0;
-                        };
-                        return getAvg(b.id) - getAvg(a.id);
-                      });
-                    }
-
-                    return filteredLibrary;
-                  })().map(game => {
-                    const gameRev = userReviews[game.id] || {};
-                    const valid = PLAYERS.map(p => gameRev[p]).filter(r => r && !r.noVote && r.note >= 0);
-                    const avg = valid.length > 0 ? (valid.reduce((sum, r) => sum + r.note, 0) / valid.length).toFixed(1) : '---';
-
-                    return (
-                      <div
-                        key={game.id}
-                        onClick={() => {
-                          setScrollPos(window.scrollY);
-                          setSelectedSingleId(game.id);
-                          window.scrollTo(0, 0);
-                        }}
-                        className="group cursor-pointer bg-gray-900/40 rounded-3xl overflow-hidden border border-gray-800 hover:border-indigo-500/50 transition-all duration-300 shadow-xl hover:shadow-indigo-500/10 flex flex-col h-full hover:scale-[1.02]"
-                      >
-                        <div className="aspect-[3/4] overflow-hidden relative shadow-inner">
-                          <img
-                            src={game.img}
-                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                            alt={game.title}
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent"></div>
-                          {game.isNew && (
-                            <div className="absolute top-4 left-4 bg-indigo-600/90 backdrop-blur-md px-3 py-1 rounded-xl border border-indigo-400/50 shadow-lg animate-pulse">
-                               <span className="text-[10px] text-white font-black uppercase tracking-widest">NUEVO</span>
-                            </div>
-                          )}
-                          <div className="absolute top-4 right-4 flex flex-col gap-2 z-10">
-                            <div className="bg-gray-950/80 backdrop-blur-md px-3 py-1 mr-[-2px] rounded-xl border border-gray-700/50 flex flex-col items-center shadow-lg">
-                               <span className="text-[9px] text-gray-500 font-bold uppercase tracking-widest mb-0.5">Media</span>
-                               <span className="text-white font-black text-sm">{avg}</span>
-                            </div>
-                            <div className="bg-gray-950/80 backdrop-blur-md px-3 py-1 mr-[-2px] rounded-xl border border-gray-700/50 flex flex-col items-center shadow-lg">
-                               <span className="text-[9px] text-gray-500 font-bold uppercase tracking-widest mb-0.5">Reseñas</span>
-                               <span className="text-white font-black text-sm">{valid.length > 0 ? valid.length : '---'}</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="p-6 flex-1 flex flex-col">
-                          <h3 className="text-white font-black text-xl mb-3 leading-tight group-hover:text-indigo-400 transition-colors">{game.title}</h3>
-                          <div className="flex flex-wrap gap-2 mt-auto">
-                             {game.genres && game.genres.slice(0, 6).map(g => (
-                               <span key={g} className="text-[9px] font-black px-2 py-1 bg-gray-800 text-gray-400 rounded-lg uppercase tracking-widest border border-gray-700/50 h-fit">{g}</span>
-                             ))}
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
+  {processedSinglePlayerGames.length === 0 && (
+    <div className="text-center py-24">
+      <Trophy className="w-16 h-16 text-gray-700 mx-auto mb-4 opacity-20" />
+      <p className="text-gray-500 font-bold italic">Ningún título ha superado los criterios de este filtro.</p>
+    </div>
+  )}
+</div>
             )}
           </div>
         )}
