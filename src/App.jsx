@@ -2016,7 +2016,7 @@ export default function App() {
             <h2 className="text-3xl font-black text-white mb-8 border-b border-gray-800 pb-4">Bitácora de Versiones</h2>
             <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-orange-500/50 before:via-gray-800/50 before:to-gray-800/20">
 
-                                          {/* v6.5.0 */}
+                                          {/* v6.4.1 */}
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-gray-900 bg-indigo-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 relative z-10">
                   <CheckCircle className="w-5 h-5" />
@@ -2032,18 +2032,18 @@ export default function App() {
                 </div>
               </div>
 
-              {/* v6.5.0 */}
+              {/* v6.4.1 */}
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-gray-900 bg-emerald-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 relative z-10">
                   <Play className="w-5 h-5" />
                 </div>
                 <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-gray-800/60 p-5 md:p-8 rounded-3xl border border-emerald-500/30 shadow-[0_0_20px_rgba(16,185,129,0.1)] transition-all">
                   <div className="flex items-center justify-between mb-1">
-                    <h3 className="font-bold text-lg text-white">v6.5.0 - Hotfix de Lanzamiento</h3>
+                    <h3 className="font-bold text-lg text-white">v6.4.1 - Hotfix de Lanzamiento</h3>
                     <span className="text-xs text-gray-500 font-bold px-2 py-1 bg-gray-800 rounded-lg whitespace-nowrap">9 ABR 2026</span>
                   </div>
                   <p className="text-sm text-gray-400 mt-2">
-                    v6.5.0 - Hotfix de Lanzamiento. Actualizada la ficha de Death Stranding 2: On The Beach con metadatos oficiales post-lanzamiento. Sincronizados tiempos de HLTB, enlaces de tienda y arte oficial del encabezado de Steam.
+                    v6.4.1 - Hotfix de Lanzamiento. Actualizada la ficha de Death Stranding 2: On The Beach con metadatos oficiales post-lanzamiento. Sincronizados tiempos de HLTB, enlaces de tienda y arte oficial del encabezado de Steam.
                   </p>
                 </div>
               </div>
