@@ -857,8 +857,8 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "megabonk",
     "title": "Megabonk",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3182800/library_600x900_2x.jpg",
-    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3182800/header.jpg",
+    "img": "",
+    "headerImg": "",
     "description": "Combates de acción frenética y vibrante caos dominan tu trayectoria a lomos de un martillar gigante que se beneficia espectacularmente del rebote físico total. Machaca a contrarreloj y destroza escenarios en una entrega arcade brillante, caóticamente entretenida y visualmente estimulante.",
     "minRequirements": {},
     "genres": [
@@ -884,8 +884,8 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "paragnosia",
     "title": "Paragnosia",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2954150/library_600x900_2x.jpg",
-    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2954150/header.jpg",
+    "img": "",
+    "headerImg": "",
     "description": "Explora perturbadores laberintos en primera persona sumergido en un crudo visual de la época PlayStation original. Superando intrincadas lógicas sobrenaturales y rompecabezas opresivos, perderás el control sobre tu propio sentido de la cordura ante anomalías grotescas del más allá en una aterradora pesquisa paranormal.",
     "minRequirements": {},
     "genres": [
