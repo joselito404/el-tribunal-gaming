@@ -81,3 +81,955 @@ export const GAMES = RAW_GAMES.map(g => ({
 
 export const PLAYERS = ['Jose', 'Mario', 'Iván', 'Carmen', 'Lázaro', 'Alejandro'];
 
+
+
+export const SINGLE_PLAYER_GAMES = [
+  {
+    "id": "eldenring",
+    "title": "Elden Ring",
+    "isNew": true,
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg",
+    "description": "Surca las Tierras Intermedias en una epopeya de fantasía oscura creada por Hidetaka Miyazaki y George R. R. Martin. Como un Sinluz, deberás blandir el poder del Círculo de Elden y alzarte como el Señor de Elden en un mundo abierto sin precedentes donde la libertad de exploración se encuentra con el desafío implacable de jefes legendarios y una mitología críptica.",
+    "minRequirements": {
+      "cpu": "Intel Core i5-8400 / AMD Ryzen 3 3300X",
+      "gpu": "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+      "ram": "12 GB",
+      "os": "Windows 10"
+    },
+    "hltb": {
+      "general": "100h",
+      "main": "60h",
+      "extras": "100h",
+      "completionist": "135h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+      "metacritic": "https://www.metacritic.com/game/pc/elden-ring",
+      "hltb": "https://howlongtobeat.com/game/68151"
+    },
+    "genres": [
+      "TIPO «DARK SOULS»",
+      "MUNDO ABIERTO",
+      "DIFICÍLES",
+      "ROL",
+      "ACCIÓN"
+    ]
+  },
+  {
+    "id": "rdr2",
+    "title": "Red Dead Redemption 2",
+    "isNew": true,
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg",
+    "description": "Arthur Morgan y la banda de van der Linde son forajidos en busca y captura tras un atraco fallido. Sumérgete en un mundo abierto viviente y reactivo, forjando tu camino a través de la América del siglo XIX en una obra maestra sobre la lealtad, la traición y el inevitable fin del Salvaje Oeste.",
+    "minRequirements": {
+      "cpu": "Intel Core i5-2500K / AMD FX-6300",
+      "gpu": "NVIDIA GeForce GTX 770 2GB / AMD Radeon R9 280 3GB",
+      "ram": "8 GB",
+      "os": "Windows 7 SP1"
+    },
+    "hltb": {
+      "general": "78½h",
+      "main": "50½h",
+      "extras": "84½h",
+      "completionist": "194h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/",
+      "metacritic": "https://www.metacritic.com/game/pc/red-dead-redemption-2",
+      "hltb": "https://howlongtobeat.com/game/27100"
+    },
+    "genres": [
+      "MUNDO ABIERTO",
+      "AVENTURA",
+      "WESTERN",
+      "ACCIÓN",
+      "NARRATIVOS"
+    ]
+  },
+  {
+    "id": "hades",
+    "title": "Hades",
+    "isNew": true,
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg",
+    "description": "Desafía al Dios de los Muertos y ábrete camino fuera del Inframundo a base de tajos en este roguelike de acción trepidante. Enfréntate a hordas de almas perdidas empuñando las armas y poderes del mismísimo Olimpo en un bucle narrativo donde cada intento de escape revela nuevos secretos.",
+    "minRequirements": {
+      "cpu": "Dual Core 2.4 GHz",
+      "gpu": "1GB VRAM / DirectX 10+ support",
+      "ram": "4 GB",
+      "os": "Windows 7 SP1"
+    },
+    "hltb": {
+      "general": "50h",
+      "main": "23½h",
+      "extras": "48½h",
+      "completionist": "95h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/1145360/Hades/",
+      "metacritic": "https://www.metacritic.com/game/pc/hades",
+      "hltb": "https://howlongtobeat.com/game/62941"
+    },
+    "genres": [
+      "ROGUELIKE",
+      "ACCIÓN",
+      "MITOLOGÍA",
+      "ISOMÉTRICO",
+      "INDIE"
+    ]
+  },
+  {
+    "id": "hollowknight",
+    "title": "Hollow Knight",
+    "isNew": true,
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg",
+    "description": "Forja tu propio camino a través del reino subterráneo de Hallownest, un laberinto de cavernas en ruinas y ciudades olvidadas. Este magistral metroidvania te exige dominar un combate preciso, desentrañar misterios ancestrales y aliarte con extraños insectos en una atmósfera insuperable.",
+    "minRequirements": {
+      "cpu": "Intel Core i3-2100 / AMD Phenom II X4 940",
+      "gpu": "NVIDIA GeForce GTX 460",
+      "ram": "4 GB",
+      "os": "Windows 7"
+    },
+    "hltb": {
+      "general": "40h",
+      "main": "27h",
+      "extras": "41h",
+      "completionist": "65h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/367520/Hollow_Knight/",
+      "metacritic": "https://www.metacritic.com/game/pc/hollow-knight",
+      "hltb": "https://howlongtobeat.com/game/26286"
+    },
+    "genres": [
+      "METROIDVANIA",
+      "INDIE",
+      "DIFICÍLES",
+      "PLATAFORMAS",
+      "EXPLORACIÓN"
+    ]
+  },
+  {
+    "id": "witcher3",
+    "title": "The Witcher 3: Wild Hunt",
+    "isNew": true,
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/292030/header.jpg",
+    "description": "Encarna a Geralt de Rivia, un curtido cazador de monstruos a sueldo embarcado en la búsqueda de la Niña de la Profecía. Explora un inabarcable continente asolado por la guerra, habitado por criaturas letales y personajes ambiguos, en un RPG maduro donde cada decisión moldea irreversiblemente el mundo a tu alrededor.",
+    "minRequirements": {
+      "cpu": "Intel CPU Core i5-2500K / AMD CPU Phenom II X4 940",
+      "gpu": "NVIDIA GPU GeForce GTX 660 / AMD GPU Radeon HD 7870",
+      "ram": "6 GB",
+      "os": "64-bit Windows 7, 64-bit Windows 8 (8.1) or 64-bit Windows 10"
+    },
+    "hltb": {
+      "general": "100h",
+      "main": "51½h",
+      "extras": "103h",
+      "completionist": "174h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/",
+      "metacritic": "https://www.metacritic.com/game/pc/the-witcher-3-wild-hunt",
+      "hltb": "https://howlongtobeat.com/game/10270"
+    },
+    "genres": [
+      "ROL",
+      "MUNDO ABIERTO",
+      "FANTASÍA",
+      "NARRATIVO",
+      "ACCIÓN"
+    ]
+  },
+  {
+    "id": "sifu",
+    "title": "Sifu",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2138710/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/2138710/header.jpg",
+    "description": "Domina el letal Kung-Fu estilo Pak Mei en tu cruzada solitaria de venganza por las calles de una ciudad contemporánea. Un beat 'em up revolucionario donde cada muerte te hace envejecer físicamente, volviéndote más fuerte pero más frágil, obligándote a dominar cada combate al compás de las artes marciales cinematográficas.",
+    "minRequirements": {
+      "cpu": "AMD FX-4350 / Intel Core i5-3470",
+      "gpu": "Radeon R7 250 / GeForce GT 640",
+      "ram": "8 GB",
+      "os": "Windows 8.1 64-bit"
+    },
+    "hltb": {
+      "general": "12h",
+      "main": "8h",
+      "extras": "14h",
+      "completionist": "22h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/1817230/Sifu/",
+      "metacritic": "https://www.metacritic.com/game/pc/sifu",
+      "hltb": "https://howlongtobeat.com/game/89091"
+    },
+    "genres": [
+      "ACCIÓN",
+      "BEAT 'EM UP",
+      "INDIE",
+      "UN JUGADOR",
+      "DIFICÍLES"
+    ]
+  },
+  {
+    "id": "cp2077",
+    "title": "Cyberpunk 2077",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg",
+    "description": "Adéntrate en Night City, la megalópolis hiperviolenta del futuro dominada por megacorporaciones y ciberimplantes. Como V, un mercenario en constante evolución, lidiarás con una reliquia experimental implantada en tu mente que alberga el constructo digital del legendario roquero terrorista Johnny Silverhand.",
+    "minRequirements": {
+      "cpu": "Core i7-6700 / Ryzen 5 1600",
+      "gpu": "GTX 1060 6GB / RX 580 8GB / Arc A380",
+      "ram": "12 GB",
+      "os": "Windows 10 64-bit"
+    },
+    "hltb": {
+      "general": "65½h",
+      "main": "26h",
+      "extras": "63h",
+      "completionist": "108h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
+      "metacritic": "https://www.metacritic.com/game/pc/cyberpunk-2077",
+      "hltb": "https://howlongtobeat.com/game/2127"
+    },
+    "genres": [
+      "ROL",
+      "MUNDO ABIERTO",
+      "CYBERPUNK",
+      "ACCIÓN",
+      "NARRATIVOS"
+    ]
+  },
+  {
+    "id": "tsushima",
+    "title": "Ghost of Tsushima Director's Cut",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/2215430/header.jpg",
+    "description": "Tsushima arde bajo el paso de la arrolladora invasión mongol en pleno Japón feudal de 1274. Jin Sakai, un noble samurái superviviente, deberá sacrificar la doctrina de su linaje y convertirse en el temido Fantasma para liberar su hogar y proteger a su asediado pueblo.",
+    "minRequirements": {
+      "cpu": "Intel Core i3-7100 / AMD Ryzen 3 1200",
+      "gpu": "NVIDIA GeForce GTX 960 4GB / AMD Radeon RX 5500 XT",
+      "ram": "8 GB",
+      "os": "Windows 10 64-bit"
+    },
+    "hltb": {
+      "general": "51h",
+      "main": "25h",
+      "extras": "47½h",
+      "completionist": "65h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_Directors_Cut/",
+      "metacritic": "https://www.metacritic.com/game/pc/ghost-of-tsushima-directors-cut",
+      "hltb": "https://howlongtobeat.com/game/51225"
+    },
+    "genres": [
+      "ACCIÓN",
+      "AVENTURA",
+      "MUNDO ABIERTO"
+    ]
+  },
+  {
+    "id": "ds3",
+    "title": "Dark Souls III",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/374320/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/374320/header.jpg",
+    "description": "La ceniza cae sobre el Reino de Lothric donde la Primera Llama amenaza con apagarse para siempre. Un viaje solemne, oscuro y brutal te aguarda mientras combates formidables criaturas corrompidas para devolver a los Señores de la Ceniza a sus tronos caídos en la obra magna que cimentó el género soulslike.",
+    "minRequirements": {
+      "cpu": "Intel Core i3-2100 / AMD® FX-6300",
+      "gpu": "NVIDIA® GeForce GTX 750 Ti / ATI Radeon HD 7950",
+      "ram": "4 GB",
+      "os": "Windows 7 SP1 64-bit"
+    },
+    "hltb": {
+      "general": "55½h",
+      "main": "31h",
+      "extras": "48½h",
+      "completionist": "100h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/374320/DARK_SOULS_III/",
+      "metacritic": "https://www.metacritic.com/game/pc/dark-souls-iii",
+      "hltb": "https://howlongtobeat.com/game/26803"
+    },
+    "genres": [
+      "TIPO «DARK SOULS»",
+      "FANTASÍA OSCURA",
+      "DIFICÍLES",
+      "ROL",
+      "ACCIÓN"
+    ]
+  },
+  {
+    "id": "godofwar",
+    "title": "God of War (2018)",
+    "genres": [
+      "ACCIÓN",
+      "AVENTURA",
+      "NARRATIVO",
+      "HACK AND SLASH",
+      "MITOLOGÍA"
+    ],
+    "hltb": {
+      "general": "30h",
+      "main": "21h",
+      "extras": "33h",
+      "completionist": "51h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/1593500/God_of_War/",
+      "metacritic": "https://www.metacritic.com/game/pc/god-of-war",
+      "hltb": "https://howlongtobeat.com/game/38050"
+    },
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/header.jpg",
+    "description": "Huyendo de la sangre derramada en Grecia, Kratos vive ahora como hombre en el gélido reino nórdico de Midgard junto a su hijo Atreus. En un viaje inquebrantable para esparcir las cenizas de su amada esposa desde el pico más alto, padre e hijo forjarán su turbio legado frente al amenazante panteón nórdico."
+  },
+  {
+    "id": "bg3",
+    "title": "Baldur's Gate 3",
+    "genres": [
+      "ROL",
+      "ESTRATEGIA",
+      "POR TURNOS",
+      "FANTASÍA",
+      "NARRATIVO"
+    ],
+    "hltb": {
+      "general": "100h",
+      "main": "60h",
+      "extras": "100h",
+      "completionist": "150h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/1086940/Baldurs_Gate_3/",
+      "metacritic": "https://www.metacritic.com/game/pc/baldurs-gate-3",
+      "hltb": "https://howlongtobeat.com/game/68033"
+    },
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg",
+    "description": "Reúne a tu grupo y regresa al vasto reino de Faerûn en la secuela que ha redefinido los RPG tácticos isométricos. Tus decisiones moldean una historia inabarcable de alianzas inciertas, traiciones oscuras y profundas amistades mientras liberas o sucumbes a la corrupción de la deidad destructiva insertada en tu mente."
+  },
+  {
+    "id": "inside",
+    "title": "Inside",
+    "genres": [
+      "PUZZLES",
+      "PLATAFORMAS",
+      "ATMOSFÉRICO",
+      "INDIE",
+      "TERROR"
+    ],
+    "hltb": {
+      "general": "4h",
+      "main": "3h",
+      "extras": "4h",
+      "completionist": "5h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/304430/INSIDE/",
+      "metacritic": "https://www.metacritic.com/game/pc/inside",
+      "hltb": "https://howlongtobeat.com/game/21694"
+    },
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304430/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/304430/header.jpg",
+    "description": "Perseguido y solo, un niño se encuentra en el centro de un proyecto oscuro. Un rompecabezas de plataformas inquietante y atmosférico."
+  },
+  {
+    "id": "ln2",
+    "title": "Little Nightmares II",
+    "genres": [
+      "TERROR",
+      "PUZZLES",
+      "PLATAFORMAS",
+      "ATMOSFÉRICO",
+      "AVENTURA"
+    ],
+    "hltb": {
+      "general": "6h",
+      "main": "5h",
+      "extras": "6h",
+      "completionist": "9h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/860510/Little_Nightmares_II/",
+      "metacritic": "https://www.metacritic.com/game/pc/little-nightmares-ii",
+      "hltb": "https://howlongtobeat.com/game/69851"
+    },
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/860510/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/860510/header.jpg",
+    "description": "Regresa a un mundo de terror encantador en Little Nightmares II, un juego de aventuras y suspense en el que juegas como Mono."
+  },
+  {
+    "id": "re4",
+    "title": "Resident Evil 4 (Remake)",
+    "genres": [
+      "TERROR",
+      "ACCIÓN",
+      "SURVIVAL HORROR",
+      "DISPAROS",
+      "AVENTURA"
+    ],
+    "hltb": {
+      "general": "21h",
+      "main": "16h",
+      "extras": "22h",
+      "completionist": "58h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/2050650/Resident_Evil_4/",
+      "metacritic": "https://www.metacritic.com/game/pc/resident-evil-4",
+      "hltb": "https://howlongtobeat.com/game/108881"
+    },
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/2050650/header.jpg",
+    "description": "Seis años después del desastre biológico en Raccoon City, Leon S. Kennedy debe rescatar a la hija del presidente en un pueblo europeo."
+  },
+  {
+    "id": "tlou1",
+    "title": "The Last of Us Part I",
+    "isNew": true,
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888140/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888140/header.jpg",
+    "description": "Vive la experiencia definitiva del juego que definió una generación narrativa. En una civilización colapsada por el hongo Cordyceps, Joel, un contrabandista cansado del mundo, debe escoltar a Ellie a través de unos Estados Unidos devastados. Lo que comienza como un encargo se convierte en un viaje emocional brutal que explora la moralidad y la supervivencia humana.",
+    "minRequirements": {
+      "cpu": "AMD Ryzen 5 1500X / Intel Core i7-4770K",
+      "gpu": "AMD Radeon RX 470 (4 GB) / NVIDIA GeForce GTX 970 (4 GB)",
+      "ram": "16 GB",
+      "os": "Windows 10"
+    },
+    "hltb": {
+      "general": "16h",
+      "main": "14h",
+      "extras": "16h",
+      "completionist": "23h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/1888140/The_Last_of_Us_Part_I/",
+      "metacritic": "https://www.metacritic.com/game/pc/the-last-of-us-part-i",
+      "hltb": "https://howlongtobeat.com/game/101111"
+    },
+    "genres": [
+      "NARRATIVO",
+      "ACCIÓN",
+      "AVENTURA",
+      "SIGILO",
+      "POSTAPOCALÍPTICO"
+    ]
+  },
+  {
+    "id": "portal2",
+    "title": "Portal 2",
+    "isNew": true,
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/620/header.jpg",
+    "description": "Una brillante amalgama de puzles espaciales, humor negro y ciencia ficción. Despierta 9999 días después de los eventos de Aperture Science y vuelve a empuñar la pistola de portales junto a la carismática Inteligencia Artificial GLaDOS y la peculiar esfera Wheatley.",
+    "minRequirements": {
+      "cpu": "3.0 GHz P4, Dual Core 2.0 / AMD64X2",
+      "gpu": "ATI Radeon X1900 / NVIDIA GeForce 7600",
+      "ram": "2 GB",
+      "os": "Windows 7 / Vista / XP"
+    },
+    "hltb": {
+      "general": "11h",
+      "main": "8h",
+      "extras": "11h",
+      "completionist": "21h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/620/Portal_2/",
+      "metacritic": "https://www.metacritic.com/game/pc/portal-2",
+      "hltb": "https://howlongtobeat.com/game/7231"
+    },
+    "genres": [
+      "PUZZLES",
+      "CIENCIA FICCIÓN",
+      "COMEDIA",
+      "PRIMERA PERSONA",
+      "INDIE"
+    ]
+  },
+  {
+    "id": "outerwilds",
+    "title": "Outer Wilds",
+    "isNew": true,
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/753640/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/753640/header.jpg",
+    "description": "Estás atrapado en un bucle temporal de 22 minutos, en un sistema solar inexplorado a punto de ser devorado por una supernova. Este aclamado título de misterio espacial te invita a deducir cómo funciona el universo uniendo los enigmáticos fragmentos de la antigua civilización Nomai, guiado únicamente por tu curiosidad.",
+    "minRequirements": {
+      "cpu": "Intel Core i5-2300 / AMD FX-4350",
+      "gpu": "NVIDIA GeForce GTX 660 / AMD Radeon HD 7870",
+      "ram": "4 GB",
+      "os": "Windows 7"
+    },
+    "hltb": {
+      "general": "21h",
+      "main": "16h",
+      "extras": "22h",
+      "completionist": "32h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/753640/Outer_Wilds/",
+      "metacritic": "https://www.metacritic.com/game/pc/outer-wilds",
+      "hltb": "https://howlongtobeat.com/game/57523"
+    },
+    "genres": [
+      "EXPLORACIÓN",
+      "MISTERIO",
+      "ESPACIO",
+      "AVENTURA",
+      "INDIE"
+    ]
+  },
+  {
+    "id": "stardew",
+    "title": "Stardew Valley",
+    "isNew": true,
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg",
+    "description": "Heredaste la vieja granja de tu abuelo en el entrañable Valle Stardew. Armado con herramientas de segunda mano, empezarás una nueva vida cultivando la tierra, cuidando animales y forjando relaciones íntimas con los lugareños en un indispensable simulador de vida y rol pastoral.",
+    "minRequirements": {
+      "cpu": "2 Ghz",
+      "gpu": "256 mb video memory, shader model 3.0+",
+      "ram": "2 GB",
+      "os": "Windows Vista or greater"
+    },
+    "hltb": {
+      "general": "100h",
+      "main": "53h",
+      "extras": "97h",
+      "completionist": "154h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+      "metacritic": "https://www.metacritic.com/game/pc/stardew-valley",
+      "hltb": "https://howlongtobeat.com/game/8933"
+    },
+    "genres": [
+      "SIMULADOR",
+      "GRANJA",
+      "RELAJANTE",
+      "INDIE",
+      "RPG"
+    ]
+  },
+  {
+    "id": "discoelysium",
+    "title": "Disco Elysium - The Final Cut",
+    "isNew": true,
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/632470/header.jpg",
+    "description": "Despiertas con una amnesia brutal en un hotel destrozado y descubres que eres un detective en Revachol, una ciudad fracturada política y moralmente. Este inigualable RPG isométrico sustituye el combate físico por batallas dialécticas entre las distintas facciones psicológicas de tu propia mente.",
+    "minRequirements": {
+      "cpu": "Intel Core 2 Duo",
+      "gpu": "DirectX 11 compatible video card (integrated or dedicated with min 512MB memory)",
+      "ram": "2 GB",
+      "os": "Windows 7"
+    },
+    "hltb": {
+      "general": "33h",
+      "main": "23h",
+      "extras": "33h",
+      "completionist": "52h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/",
+      "metacritic": "https://www.metacritic.com/game/pc/disco-elysium-the-final-cut",
+      "hltb": "https://howlongtobeat.com/game/57335"
+    },
+    "genres": [
+      "RPG",
+      "DETECTIVE",
+      "NARRATIVO",
+      "FILOSÓFICO",
+      "ISOMÉTRICO"
+    ]
+  },
+  {
+    "id": "cuphead",
+    "title": "Cuphead",
+    "isNew": true,
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/268910/header.jpg",
+    "description": "Déjate cautivar por la gloriosa animación tradicional de los años 30 en este despiadado run-and-gun. Cuphead y Mugman apostaron sus almas con el mismísimo Diablo y perdieron; ahora deben recolectar las deudas de otros pintorescos y demenciales jefes en una danza mortal que exige reflejos impecables.",
+    "minRequirements": {
+      "cpu": "Intel Core2 Duo E8400 / AMD Athlon 64 X2 6000+",
+      "gpu": "NVIDIA GeForce 9600 GT / AMD Radeon HD 3870",
+      "ram": "3 GB",
+      "os": "Windows 7"
+    },
+    "hltb": {
+      "general": "14h",
+      "main": "11h",
+      "extras": "14h",
+      "completionist": "25h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/268910/Cuphead/",
+      "metacritic": "https://www.metacritic.com/game/pc/cuphead",
+      "hltb": "https://howlongtobeat.com/game/21680"
+    },
+    "genres": [
+      "DIFÍCIL",
+      "BOSS RUSH",
+      "PLATAFORMAS",
+      "INDIE",
+      "DIBUJOS ANIMADOS"
+    ]
+  },
+  {
+    "id": "expedition33",
+    "title": "Clair Obscur: Expedition 33",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1903340/header.jpg",
+    "description": "Un RPG por turnos reactivo ambientado en un mundo inspirado en la Belle Époque. Cada año, la Pintora despierta para condenar a una generación. Únete a la Expedición 33 en una misión desesperada para destruir el ciclo de la muerte en una obra que mezcla la estrategia clásica con mecánicas de combate en tiempo real.",
+    "minRequirements": {
+      "cpu": "Intel Core i5-8600K / AMD Ryzen 5 3600",
+      "gpu": "NVIDIA GTX 1070 / AMD RX 5700",
+      "ram": "16 GB",
+      "os": "Windows 10"
+    },
+    "genres": [
+      "ROL",
+      "POR TURNOS",
+      "FANTASÍA",
+      "ACCIÓN",
+      "AVENTURA"
+    ],
+    "hltb": {
+      "general": "48½h",
+      "main": "29h",
+      "extras": "45½h",
+      "completionist": "68h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/",
+      "metacritic": "https://www.metacritic.com/game/pc/clair-obscur-expedition-33",
+      "hltb": "https://howlongtobeat.com/game/152016"
+    },
+    "isNew": true
+  },
+  {
+    "id": "ballxpit",
+    "title": "Ball x pit",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3110390/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3110390/header.jpg",
+    "description": "Un título de plataformas laberíntico basado puramente en físicas mecánicas. Olvídate de los saltos automáticos; dependiendo de la inercia, rebotes programados y maniobras de extrema exactitud milimétrica, recorrerás trampas mortales que destrozarán tu paciencia y alimentarán tu determinación.",
+    "minRequirements": {},
+    "genres": [
+      "FÍSICAS",
+      "PUZZLES",
+      "INDIE",
+      "DIFICÍL",
+      "PRECISIÓN"
+    ],
+    "hltb": {
+      "general": "---",
+      "main": "---",
+      "extras": "---",
+      "completionist": "---"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/3110390/Ball_x_pit/",
+      "metacritic": "---",
+      "hltb": "---"
+    },
+    "isNew": true
+  },
+  {
+    "id": "yangtze",
+    "title": "Murders on the Yangtze River",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2274640/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2274640/header.jpg",
+    "description": "Experimenta un refinado thriller de misterio histórico en la China de la década de 1900. Surca el exótico río Yangtsé y adéntrate en complejos crímenes utilizando el fino arte de la deducción londinense en combinación con un fuerte contexto dramático sobre el engaño humano.",
+    "minRequirements": {},
+    "genres": [
+      "MISTERIO",
+      "DETECTIVE",
+      "NARRATIVO",
+      "INVESTIGACIÓN",
+      "HISTÓRICO"
+    ],
+    "hltb": {
+      "general": "15h",
+      "main": "12h",
+      "extras": "---",
+      "completionist": "20h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/2274640/Murders_on_the_Yangtze_River/",
+      "metacritic": "---",
+      "hltb": "https://howlongtobeat.com/game/144185"
+    },
+    "isNew": true
+  },
+  {
+    "id": "plague_requiem",
+    "title": "A Plague Tale: Requiem",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1182900/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1182900/header.jpg",
+    "description": "Sigue a los mellizos De Rune en su viaje al extremo sur intentando evadir la devastadora bendición encubierta de La Macula del pequeño Hugo. Esta aventura desgarradora combina intenso sigilo táctico con secuencias abrumadoras infestadas por inabarcables enjambres de ratas frenéticas en la desesperada Francia del siglo XIV.",
+    "minRequirements": {
+      "cpu": "Intel Core i5-4690K / AMD FX-8300",
+      "gpu": "NVIDIA GeForce GTX 970 / AMD Radeon RX 590",
+      "ram": "16 GB",
+      "os": "Windows 10"
+    },
+    "genres": [
+      "AVENTURA",
+      "NARRATIVO",
+      "SIGILO",
+      "ACCIÓN",
+      "TERROR"
+    ],
+    "hltb": {
+      "general": "21h",
+      "main": "17h",
+      "extras": "22h",
+      "completionist": "27h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/1182900/A_Plague_Tale_Requiem/",
+      "metacritic": "https://www.metacritic.com/game/pc/a-plague-tale-requiem",
+      "hltb": "https://howlongtobeat.com/game/93939"
+    },
+    "isNew": true
+  },
+  {
+    "id": "plague_innocence",
+    "title": "A Plague Tale: Innocence",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/752590/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/752590/header.jpg",
+    "description": "Francia, año de gracia 1349. Sumérgete en las deprimentes horas de la historia europea al amparo de Amicia de Rune y su frágil hermano. Perseguidos incesantemente por una opresiva congregación monástica y oleadas espectrales de ratas purulentas, confiarán su supervivencia exclusivamente a las antorchas y su astucia.",
+    "minRequirements": {
+      "cpu": "Intel Core i3-2100 / AMD FX-4100",
+      "gpu": "NVIDIA GeForce GTX 660 / AMD Radeon HD 7870",
+      "ram": "8 GB",
+      "os": "Windows 7/8/10"
+    },
+    "genres": [
+      "AVENTURA",
+      "NARRATIVO",
+      "SIGILO",
+      "TERROR",
+      "HISTÓRICO"
+    ],
+    "hltb": {
+      "general": "12h",
+      "main": "10h",
+      "extras": "12h",
+      "completionist": "16h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/752590/A_Plague_Tale_Innocence/",
+      "metacritic": "https://www.metacritic.com/game/pc/a-plague-tale-innocence",
+      "hltb": "https://howlongtobeat.com/game/46502"
+    },
+    "isNew": true
+  },
+  {
+    "id": "nobodywantsdie",
+    "title": "Nobody Wants to Die",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1939970/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1939970/header.jpg",
+    "description": "Entra en los empapados callejones de la distópica ciudad de Nueva York del año 2329. Enfrentado al crudo abismo del neonoir, manejarás la neuroprótesis temporal para avanzar, retroceder e investigar macabros campos hiperrealistas, buscando verdades siniestras que las corporaciones desean omitir.",
+    "minRequirements": {
+      "cpu": "Intel Core i3-8100 / AMD Ryzen 3 2300X",
+      "gpu": "NVIDIA GeForce GTX 1660 Super / AMD Radeon RX 5600 XT",
+      "ram": "16 GB",
+      "os": "Windows 10"
+    },
+    "genres": [
+      "DETECTIVE",
+      "CYBERPUNK",
+      "NARRATIVO",
+      "NOIR",
+      "MISTERIO"
+    ],
+    "hltb": {
+      "general": "6h",
+      "main": "5h",
+      "extras": "6h",
+      "completionist": "7h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/1939970/Nobody_Wants_to_Die/",
+      "metacritic": "https://www.metacritic.com/game/pc/nobody-wants-to-die",
+      "hltb": "https://howlongtobeat.com/game/146059"
+    },
+    "isNew": true
+  },
+  {
+    "id": "deathstranding_dc",
+    "title": "DEATH STRANDING DIRECTOR'S CUT",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1850570/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1850570/header.jpg",
+    "description": "La experiencia extendida de Hideo Kojima te sumerge en un mundo apocalíptico desolado donde los mortales están atrapados entre dos realidades insidiosas. Tu labor como repartidor de esperanza es vital en esta reflexiva obra colaborativa conectando a la humanidad en una solitaria red contra los Entes Varados.",
+    "minRequirements": {
+      "cpu": "Intel Core i5-3470 / AMD Ryzen 3 1200",
+      "gpu": "NVIDIA GeForce GTX 1050 / AMD Radeon RX 560",
+      "ram": "8 GB",
+      "os": "Windows 10"
+    },
+    "genres": [
+      "ACCIÓN",
+      "AVENTURA",
+      "MUNDO ABIERTO",
+      "NARRATIVO",
+      "CIENCIA FICCIÓN"
+    ],
+    "hltb": {
+      "general": "58h",
+      "main": "36h",
+      "extras": "60h",
+      "completionist": "113h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/1850570/DEATH_STRANDING_DIRECTORS_CUT/",
+      "metacritic": "https://www.metacritic.com/game/pc/death-stranding-directors-cut",
+      "hltb": "https://howlongtobeat.com/game/93457"
+    },
+    "isNew": true
+  },
+  {
+    "id": "deathstranding_2",
+    "title": "Death Stranding 2: On The Beach",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2902340/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2902340/header.jpg",
+    "description": "Sam Porter Bridges regresa para reconectar un mundo fragmentado más allá de las fronteras conocidas. A bordo de la nave Magellan y junto a la organización Drawbridge, deberás navegar por terrenos hostiles y enfrentar amenazas sobrenaturales en una odisea filosófica que redefine el viaje como el destino final.",
+    "minRequirements": {},
+    "genres": [
+      "ACCIÓN",
+      "AVENTURA",
+      "NARRATIVO",
+      "MUNDO ABIERTO",
+      "CIENCIA FICCIÓN"
+    ],
+    "hltb": {
+      "general": "55h",
+      "main": "34h",
+      "extras": "62h",
+      "completionist": "115h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/2902340/DEATH_STRANDING_2_ON_THE_BEACH/",
+      "metacritic": "https://www.metacritic.com/game/pc/death-stranding-2-on-the-beach",
+      "hltb": "https://howlongtobeat.com/game/118315"
+    },
+    "isNew": true
+  },
+  {
+    "id": "megabonk",
+    "title": "Megabonk",
+    "img": "",
+    "headerImg": "",
+    "description": "Combates de acción frenética y vibrante caos dominan tu trayectoria a lomos de un martillar gigante que se beneficia espectacularmente del rebote físico total. Machaca a contrarreloj y destroza escenarios en una entrega arcade brillante, caóticamente entretenida y visualmente estimulante.",
+    "minRequirements": {},
+    "genres": [
+      "ACCIÓN",
+      "PLATAFORMAS",
+      "INDIE",
+      "CASUAL",
+      "DIFÍCIL"
+    ],
+    "hltb": {
+      "general": "---",
+      "main": "---",
+      "extras": "---",
+      "completionist": "---"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/3182800/Megabonk/",
+      "metacritic": "---",
+      "hltb": "https://howlongtobeat.com/game/160475"
+    },
+    "isNew": true
+  },
+  {
+    "id": "paragnosia",
+    "title": "Paragnosia",
+    "img": "",
+    "headerImg": "",
+    "description": "Explora perturbadores laberintos en primera persona sumergido en un crudo visual de la época PlayStation original. Superando intrincadas lógicas sobrenaturales y rompecabezas opresivos, perderás el control sobre tu propio sentido de la cordura ante anomalías grotescas del más allá en una aterradora pesquisa paranormal.",
+    "minRequirements": {},
+    "genres": [
+      "AVENTURA",
+      "PUZZLES",
+      "INDIE",
+      "CASUAL",
+      "MISTERIO"
+    ],
+    "hltb": {
+      "general": "---",
+      "main": "---",
+      "extras": "---",
+      "completionist": "---"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/2954150/Paragnosia/",
+      "metacritic": "---",
+      "hltb": "https://howlongtobeat.com/game/153723"
+    },
+    "isNew": true
+  },
+  {
+    "id": "pluckysquire",
+    "title": "El Escudero Valiente (The Plucky Squire)",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627800/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627800/header.jpg",
+    "description": "Una deliciosa aventura interdimensional en la vida de Jot un héroe literario expulsado directamente fuera de su imaginario reino bidimensional. Resuelve situaciones innovadoras moviéndote del colorido cuento ilustrado hacia los imponentes escenarios y plataformas del escritorio tridimensional interactuando con palabras dinámicas.",
+    "minRequirements": {},
+    "genres": [
+      "ACCIÓN",
+      "AVENTURA",
+      "PLATAFORMAS",
+      "INDIE",
+      "PUZZLES"
+    ],
+    "hltb": {
+      "general": "---",
+      "main": "---",
+      "extras": "---",
+      "completionist": "---"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/1627800/The_Plucky_Squire/",
+      "metacritic": "https://www.metacritic.com/game/pc/the-plucky-squire",
+      "hltb": "https://howlongtobeat.com/game/109156"
+    },
+    "isNew": true
+  },
+  {
+    "id": "ninesols",
+    "title": "Nine Sols",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809540/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809540/header.jpg",
+    "description": "Un metroidvania 2D dibujado a mano en un universo 'Taopunk' que fusiona el ciberpunk con el taoísmo. Sigue al guerrero Yi en su cruzada de venganza contra los 9 Soles en un sistema de combate implacable basado en desvíos (parry) que exige una precisión milimétrica.",
+    "minRequirements": {},
+    "genres": [
+      "ACCIÓN",
+      "AVENTURA",
+      "PLATAFORMAS",
+      "INDIE",
+      "DIFICÍL"
+    ],
+    "hltb": {
+      "general": "26h",
+      "main": "23h",
+      "extras": "---",
+      "completionist": "38h"
+    },
+    "links": {
+      "steam": "https://store.steampowered.com/app/1809540/Nine_Sols/",
+      "metacritic": "---",
+      "hltb": "https://howlongtobeat.com/game/112812"
+    },
+    "isNew": true
+  }
+];
