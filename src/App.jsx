@@ -18,9 +18,9 @@ const SINGLE_PLAYER_GAMES = [
     "id": "eldenring",
     "title": "Elden Ring",
     "isNew": true,
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg",
-    "description": "[ACCIÓN / RPG / MUNDO ABIERTO] Levántate, Sinluz, y déjate guiar por la gracia para esgrimir el poder del Círculo de Elden y convertirte en el señor de Elden en las Tierras Intermedias.",
+    "description": "Surca las Tierras Intermedias en una epopeya de fantasía oscura creada por Hidetaka Miyazaki y George R. R. Martin. Como un Sinluz, deberás blandir el poder del Círculo de Elden y alzarte como el Señor de Elden en un mundo abierto sin precedentes donde la libertad de exploración se encuentra con el desafío implacable de jefes legendarios y una mitología críptica.",
     "minRequirements": {
       "cpu": "Intel Core i5-8400 / AMD Ryzen 3 3300X",
       "gpu": "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
@@ -50,9 +50,9 @@ const SINGLE_PLAYER_GAMES = [
     "id": "rdr2",
     "title": "Red Dead Redemption 2",
     "isNew": true,
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg",
-    "description": "[ACCIÓN / AVENTURA / WESTERN] Arthur Morgan y la banda de van der Linde son forajidos en busca y captura. La banda deberá atracar, robar y luchar para sobrevivir en el despiadado corazón de América.",
+    "description": "Arthur Morgan y la banda de van der Linde son forajidos en busca y captura tras un atraco fallido. Sumérgete en un mundo abierto viviente y reactivo, forjando tu camino a través de la América del siglo XIX en una obra maestra sobre la lealtad, la traición y el inevitable fin del Salvaje Oeste.",
     "minRequirements": {
       "cpu": "Intel Core i5-2500K / AMD FX-6300",
       "gpu": "NVIDIA GeForce GTX 770 2GB / AMD Radeon R9 280 3GB",
@@ -82,9 +82,9 @@ const SINGLE_PLAYER_GAMES = [
     "id": "hades",
     "title": "Hades",
     "isNew": true,
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg",
-    "description": "[ROGUELIKE / ACCIÓN / ISOMÉTRICO] Desafía al Dios de los Muertos y ábrete camino fuera del Inframundo en este juego de mazmorras de los creadores de Bastion y Transistor.",
+    "description": "Desafía al Dios de los Muertos y ábrete camino fuera del Inframundo a base de tajos en este roguelike de acción trepidante. Enfréntate a hordas de almas perdidas empuñando las armas y poderes del mismísimo Olimpo en un bucle narrativo donde cada intento de escape revela nuevos secretos.",
     "minRequirements": {
       "cpu": "Dual Core 2.4 GHz",
       "gpu": "1GB VRAM / DirectX 10+ support",
@@ -114,9 +114,9 @@ const SINGLE_PLAYER_GAMES = [
     "id": "hollowknight",
     "title": "Hollow Knight",
     "isNew": true,
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/367520/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg",
-    "description": "[METROIDVANIA / ACCIÓN / AVENTURA] ¡Forja tu propio camino en Hollow Knight! Una aventura épica a través de un vasto reino en ruinas de insectos y héroes.",
+    "description": "Forja tu propio camino a través del reino subterráneo de Hallownest, un laberinto de cavernas en ruinas y ciudades olvidadas. Este magistral metroidvania te exige dominar un combate preciso, desentrañar misterios ancestrales y aliarte con extraños insectos en una atmósfera insuperable.",
     "minRequirements": {
       "cpu": "Intel Core i3-2100 / AMD Phenom II X4 940",
       "gpu": "NVIDIA GeForce GTX 460",
@@ -146,9 +146,9 @@ const SINGLE_PLAYER_GAMES = [
     "id": "witcher3",
     "title": "The Witcher 3: Wild Hunt",
     "isNew": true,
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/292030/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/292030/header.jpg",
-    "description": "[ACCIÓN / RPG / FANTASÍA] Te conviertes en Geralt de Rivia, cazador de monstruos a sueldo. Ante ti se despliega un continente devastado por la guerra e infestado de monstruos.",
+    "description": "Encarna a Geralt de Rivia, un curtido cazador de monstruos a sueldo embarcado en la búsqueda de la Niña de la Profecía. Explora un inabarcable continente asolado por la guerra, habitado por criaturas letales y personajes ambiguos, en un RPG maduro donde cada decisión moldea irreversiblemente el mundo a tu alrededor.",
     "minRequirements": {
       "cpu": "Intel CPU Core i5-2500K / AMD CPU Phenom II X4 940",
       "gpu": "NVIDIA GPU GeForce GTX 660 / AMD GPU Radeon HD 7870",
@@ -177,9 +177,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "sifu",
     "title": "Sifu",
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/2138710/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2138710/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/2138710/header.jpg",
-    "description": "[ROGUELIKE / BEAT 'EM UP] Un brutal juego de lucha realista en tercera persona. Domina el Kung-Fu Pak Mei y embárcate en un camino de venganza cinematográfico donde cada muerte te envejece, exigiéndote la perfección para avanzar.",
+    "description": "Domina el letal Kung-Fu estilo Pak Mei en tu cruzada solitaria de venganza por las calles de una ciudad contemporánea. Un beat 'em up revolucionario donde cada muerte te hace envejecer físicamente, volviéndote más fuerte pero más frágil, obligándote a dominar cada combate al compás de las artes marciales cinematográficas.",
     "minRequirements": {
       "cpu": "AMD FX-4350 / Intel Core i5-3470",
       "gpu": "Radeon R7 250 / GeForce GT 640",
@@ -208,9 +208,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "cp2077",
     "title": "Cyberpunk 2077",
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/1091500/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg",
-    "description": "[ACTION RPG / MUNDO ABIERTO] Adéntrate en Night City, una megalópolis obsesionada con el poder, el glamur y la modificación corporal. Juega como V, un mercenario ciber-mejorado, en una historia densa y llena de decisiones morales.",
+    "description": "Adéntrate en Night City, la megalópolis hiperviolenta del futuro dominada por megacorporaciones y ciberimplantes. Como V, un mercenario en constante evolución, lidiarás con una reliquia experimental implantada en tu mente que alberga el constructo digital del legendario roquero terrorista Johnny Silverhand.",
     "minRequirements": {
       "cpu": "Core i7-6700 / Ryzen 5 1600",
       "gpu": "GTX 1060 6GB / RX 580 8GB / Arc A380",
@@ -239,9 +239,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "tsushima",
     "title": "Ghost of Tsushima Director's Cut",
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/2215430/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/2215430/header.jpg",
-    "description": "[ACCIÓN-AVENTURA / MUNDO ABIERTO] A finales del siglo XIII, la isla de Tsushima es el último bastión ante el Imperio mongol. Jin Sakai deberá abandonar la tradición samurái y abrazar el camino del Fantasma para liberar su hogar.",
+    "description": "Tsushima arde bajo el paso de la arrolladora invasión mongol en pleno Japón feudal de 1274. Jin Sakai, un noble samurái superviviente, deberá sacrificar la doctrina de su linaje y convertirse en el temido Fantasma para liberar su hogar y proteger a su asediado pueblo.",
     "minRequirements": {
       "cpu": "Intel Core i3-7100 / AMD Ryzen 3 1200",
       "gpu": "NVIDIA GeForce GTX 960 4GB / AMD Radeon RX 5500 XT",
@@ -268,9 +268,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "ds3",
     "title": "Dark Souls III",
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/374320/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/374320/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/374320/header.jpg",
-    "description": "[ACTION RPG / SOULSLIKE] El cierre magistral de la trilogía de FromSoftware. Un mundo oscuro, melancólico y despiadado que pondrá a prueba tu paciencia con combates letales, jefes épicos y un diseño de niveles interconectado.",
+    "description": "La ceniza cae sobre el Reino de Lothric donde la Primera Llama amenaza con apagarse para siempre. Un viaje solemne, oscuro y brutal te aguarda mientras combates formidables criaturas corrompidas para devolver a los Señores de la Ceniza a sus tronos caídos en la obra magna que cimentó el género soulslike.",
     "minRequirements": {
       "cpu": "Intel Core i3-2100 / AMD® FX-6300",
       "gpu": "NVIDIA® GeForce GTX 750 Ti / ATI Radeon HD 7950",
@@ -299,7 +299,6 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "godofwar",
     "title": "God of War (2018)",
-    "summary": "Kratos, ahora un hombre fuera de la sombra de los dioses, debe adaptarse a tierras desconocidas y ser un padre para Atreus en el reino nórdico de Midgard.",
     "genres": [
       "ACCIÓN",
       "AVENTURA",
@@ -318,13 +317,13 @@ const SINGLE_PLAYER_GAMES = [
       "metacritic": "https://www.metacritic.com/game/pc/god-of-war",
       "hltb": "https://howlongtobeat.com/game/38050"
     },
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/library_600x900_2x.jpg",
-    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/header.jpg"
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/header.jpg",
+    "description": "Huyendo de la sangre derramada en Grecia, Kratos vive ahora como hombre en el gélido reino nórdico de Midgard junto a su hijo Atreus. En un viaje inquebrantable para esparcir las cenizas de su amada esposa desde el pico más alto, padre e hijo forjarán su turbio legado frente al amenazante panteón nórdico."
   },
   {
     "id": "bg3",
     "title": "Baldur's Gate 3",
-    "summary": "Reúne a tu grupo y regresa a los Reinos Olvidados en una historia de compañerismo, traición, sacrificio y la tentación del poder absoluto.",
     "genres": [
       "ROL",
       "ESTRATEGIA",
@@ -343,13 +342,13 @@ const SINGLE_PLAYER_GAMES = [
       "metacritic": "https://www.metacritic.com/game/pc/baldurs-gate-3",
       "hltb": "https://howlongtobeat.com/game/68033"
     },
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/1086940/library_600x900_2x.jpg",
-    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg"
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg",
+    "description": "Reúne a tu grupo y regresa al vasto reino de Faerûn en la secuela que ha redefinido los RPG tácticos isométricos. Tus decisiones moldean una historia inabarcable de alianzas inciertas, traiciones oscuras y profundas amistades mientras liberas o sucumbes a la corrupción de la deidad destructiva insertada en tu mente."
   },
   {
     "id": "inside",
     "title": "Inside",
-    "summary": "Perseguido y solo, un niño se encuentra en el centro de un proyecto oscuro. Un rompecabezas de plataformas inquietante y atmosférico.",
     "genres": [
       "PUZZLES",
       "PLATAFORMAS",
@@ -368,13 +367,13 @@ const SINGLE_PLAYER_GAMES = [
       "metacritic": "https://www.metacritic.com/game/pc/inside",
       "hltb": "https://howlongtobeat.com/game/21694"
     },
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/304430/library_600x900_2x.jpg",
-    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/304430/header.jpg"
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304430/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/304430/header.jpg",
+    "description": "Perseguido y solo, un niño se encuentra en el centro de un proyecto oscuro. Un rompecabezas de plataformas inquietante y atmosférico."
   },
   {
     "id": "ln2",
     "title": "Little Nightmares II",
-    "summary": "Regresa a un mundo de terror encantador en Little Nightmares II, un juego de aventuras y suspense en el que juegas como Mono.",
     "genres": [
       "TERROR",
       "PUZZLES",
@@ -393,13 +392,13 @@ const SINGLE_PLAYER_GAMES = [
       "metacritic": "https://www.metacritic.com/game/pc/little-nightmares-ii",
       "hltb": "https://howlongtobeat.com/game/69851"
     },
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/860510/library_600x900_2x.jpg",
-    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/860510/header.jpg"
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/860510/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/860510/header.jpg",
+    "description": "Regresa a un mundo de terror encantador en Little Nightmares II, un juego de aventuras y suspense en el que juegas como Mono."
   },
   {
     "id": "re4",
     "title": "Resident Evil 4 (Remake)",
-    "summary": "Seis años después del desastre biológico en Raccoon City, Leon S. Kennedy debe rescatar a la hija del presidente en un pueblo europeo.",
     "genres": [
       "TERROR",
       "ACCIÓN",
@@ -418,16 +417,17 @@ const SINGLE_PLAYER_GAMES = [
       "metacritic": "https://www.metacritic.com/game/pc/resident-evil-4",
       "hltb": "https://howlongtobeat.com/game/108881"
     },
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/2050650/library_600x900_2x.jpg",
-    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/2050650/header.jpg"
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/library_600x900_2x.jpg",
+    "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/2050650/header.jpg",
+    "description": "Seis años después del desastre biológico en Raccoon City, Leon S. Kennedy debe rescatar a la hija del presidente en un pueblo europeo."
   },
   {
     "id": "tlou1",
     "title": "The Last of Us Part I",
     "isNew": true,
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888140/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888140/library_600x900_2x.jpg",
     "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888140/header.jpg",
-    "description": "[NARRATIVO / ACCIÓN / AVENTURA] En una civilización devastada, Joel, un superviviente endurecido, es contratado para sacar a escondidas a Ellie, una niña de 14 años, de una zona de cuarentena militar.",
+    "description": "Vive la experiencia definitiva del juego que definió una generación narrativa. En una civilización colapsada por el hongo Cordyceps, Joel, un contrabandista cansado del mundo, debe escoltar a Ellie a través de unos Estados Unidos devastados. Lo que comienza como un encargo se convierte en un viaje emocional brutal que explora la moralidad y la supervivencia humana.",
     "minRequirements": {
       "cpu": "AMD Ryzen 5 1500X / Intel Core i7-4770K",
       "gpu": "AMD Radeon RX 470 (4 GB) / NVIDIA GeForce GTX 970 (4 GB)",
@@ -457,9 +457,9 @@ const SINGLE_PLAYER_GAMES = [
     "id": "portal2",
     "title": "Portal 2",
     "isNew": true,
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/620/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/620/header.jpg",
-    "description": "[PUZZLES / CIENCIA FICCIÓN / COMEDIA] Vuelve a los laboratorios de Aperture Science y enfréntate de nuevo a GLaDOS en una aventura de puzles que redefine el ingenio y la narrativa.",
+    "description": "Una brillante amalgama de puzles espaciales, humor negro y ciencia ficción. Despierta 9999 días después de los eventos de Aperture Science y vuelve a empuñar la pistola de portales junto a la carismática Inteligencia Artificial GLaDOS y la peculiar esfera Wheatley.",
     "minRequirements": {
       "cpu": "3.0 GHz P4, Dual Core 2.0 / AMD64X2",
       "gpu": "ATI Radeon X1900 / NVIDIA GeForce 7600",
@@ -489,9 +489,9 @@ const SINGLE_PLAYER_GAMES = [
     "id": "outerwilds",
     "title": "Outer Wilds",
     "isNew": true,
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/753640/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/753640/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/753640/header.jpg",
-    "description": "[EXPLORACIÓN / MISTERIO / ESPACIO] Un misterio de mundo abierto sobre un sistema solar atrapado en un bucle temporal infinito. Explora planetas que cambian con el paso del tiempo.",
+    "description": "Estás atrapado en un bucle temporal de 22 minutos, en un sistema solar inexplorado a punto de ser devorado por una supernova. Este aclamado título de misterio espacial te invita a deducir cómo funciona el universo uniendo los enigmáticos fragmentos de la antigua civilización Nomai, guiado únicamente por tu curiosidad.",
     "minRequirements": {
       "cpu": "Intel Core i5-2300 / AMD FX-4350",
       "gpu": "NVIDIA GeForce GTX 660 / AMD Radeon HD 7870",
@@ -521,9 +521,9 @@ const SINGLE_PLAYER_GAMES = [
     "id": "stardew",
     "title": "Stardew Valley",
     "isNew": true,
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/413150/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg",
-    "description": "[SIMULADOR / GRANJA / RELAJANTE] Has heredado la vieja parcela agrícola de tu abuelo. Armado con herramientas de mano y unas pocas monedas, te dispones a comenzar tu nueva vida.",
+    "description": "Heredaste la vieja granja de tu abuelo en el entrañable Valle Stardew. Armado con herramientas de segunda mano, empezarás una nueva vida cultivando la tierra, cuidando animales y forjando relaciones íntimas con los lugareños en un indispensable simulador de vida y rol pastoral.",
     "minRequirements": {
       "cpu": "2 Ghz",
       "gpu": "256 mb video memory, shader model 3.0+",
@@ -553,9 +553,9 @@ const SINGLE_PLAYER_GAMES = [
     "id": "discoelysium",
     "title": "Disco Elysium - The Final Cut",
     "isNew": true,
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/632470/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/632470/header.jpg",
-    "description": "[RPG / DETECTIVE / NARRATIVO] Eres un detective con un sistema de habilidades único a tu disposición y toda una manzana para abrirte paso. Interroga personajes, resuelve crímenes o acepta sobornos.",
+    "description": "Despiertas con una amnesia brutal en un hotel destrozado y descubres que eres un detective en Revachol, una ciudad fracturada política y moralmente. Este inigualable RPG isométrico sustituye el combate físico por batallas dialécticas entre las distintas facciones psicológicas de tu propia mente.",
     "minRequirements": {
       "cpu": "Intel Core 2 Duo",
       "gpu": "DirectX 11 compatible video card (integrated or dedicated with min 512MB memory)",
@@ -585,9 +585,9 @@ const SINGLE_PLAYER_GAMES = [
     "id": "cuphead",
     "title": "Cuphead",
     "isNew": true,
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/268910/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/268910/header.jpg",
-    "description": "[DIFÍCIL / BOSS RUSH / PLATAFORMAS] Un juego de acción clásico de 'corre y dispara' centrado en batallas contra jefes. Inspirado en los dibujos animados de la década de 1930.",
+    "description": "Déjate cautivar por la gloriosa animación tradicional de los años 30 en este despiadado run-and-gun. Cuphead y Mugman apostaron sus almas con el mismísimo Diablo y perdieron; ahora deben recolectar las deudas de otros pintorescos y demenciales jefes en una danza mortal que exige reflejos impecables.",
     "minRequirements": {
       "cpu": "Intel Core2 Duo E8400 / AMD Athlon 64 X2 6000+",
       "gpu": "NVIDIA GeForce 9600 GT / AMD Radeon HD 3870",
@@ -616,9 +616,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "expedition33",
     "title": "Clair Obscur: Expedition 33",
-    "img": "https://cdn.akamai.steamstatic.com/steam/apps/1903340/library_600x900_2x.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/library_600x900_2x.jpg",
     "headerImg": "https://cdn.akamai.steamstatic.com/steam/apps/1903340/header.jpg",
-    "description": "[ROL / POR TURNOS / FANTASÍA] Lidera a los miembros de la Expedición 33 en su misión para destruir a la Pintora y evitar que vuelva a pintar la muerte. Explora un mundo maravilloso inspirado en la Belle Époque francesa y lucha contra enemigos únicos en este RPG por turnos con mecánicas en tiempo real.",
+    "description": "Un RPG por turnos reactivo ambientado en un mundo inspirado en la Belle Époque. Cada año, la Pintora despierta para condenar a una generación. Únete a la Expedición 33 en una misión desesperada para destruir el ciclo de la muerte en una obra que mezcla la estrategia clásica con mecánicas de combate en tiempo real.",
     "minRequirements": {
       "cpu": "Intel Core i5-8600K / AMD Ryzen 5 3600",
       "gpu": "NVIDIA GTX 1070 / AMD RX 5700",
@@ -648,9 +648,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "ballxpit",
     "title": "Ball x pit",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3110390/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3110390/library_600x900_2x.jpg",
     "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3110390/header.jpg",
-    "description": "[FÍSICAS / PUZZLES / INDIE / DIFÍCIL / PRECISION] Un desafiante juego de plataformas basado en físicas donde controlas una pequeña bola a través de un mundo laberíntico. Olvídate de los saltos tradicionales; aquí dependes del impulso, la gravedad y una precisión milimétrica para superar obstáculos que parecen imposibles. Cada nivel es un puzle de inercia que pondrá a prueba tu paciencia y habilidad técnica.",
+    "description": "Un título de plataformas laberíntico basado puramente en físicas mecánicas. Olvídate de los saltos automáticos; dependiendo de la inercia, rebotes programados y maniobras de extrema exactitud milimétrica, recorrerás trampas mortales que destrozarán tu paciencia y alimentarán tu determinación.",
     "minRequirements": {},
     "genres": [
       "FÍSICAS",
@@ -675,9 +675,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "yangtze",
     "title": "Murders on the Yangtze River",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2274640/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2274640/library_600x900_2x.jpg",
     "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2274640/header.jpg",
-    "description": "[MISTERIO / DETECTIVE / NARRATIVO / INVESTIGACIÓN / HISTÓRICO] Una aventura de misterio al estilo \"whodunnit\" ambientada en la China de principios del siglo XX. A bordo de un barco por el río Yangtsé, deberás investigar una serie de asesinatos entrelazados. Recoge pistas, interroga a sospechosos con personalidades complejas y utiliza el razonamiento lógico para desvelar una conspiración que va mucho más allá de un simple crimen pasional.",
+    "description": "Experimenta un refinado thriller de misterio histórico en la China de la década de 1900. Surca el exótico río Yangtsé y adéntrate en complejos crímenes utilizando el fino arte de la deducción londinense en combinación con un fuerte contexto dramático sobre el engaño humano.",
     "minRequirements": {},
     "genres": [
       "MISTERIO",
@@ -702,9 +702,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "plague_requiem",
     "title": "A Plague Tale: Requiem",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1182900/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1182900/library_600x900_2x.jpg",
     "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1182900/header.jpg",
-    "description": "[AVENTURA / NARRATIVO / SIGILO / ACCIÓN / POSTAPOCALÍPTICO] La desgarradora conclusión del viaje de Amicia y Hugo. Tras huir de su hogar devastado, los hermanos viajan al sur, hacia nuevas regiones y vibrantes ciudades, intentando comenzar una nueva vida y controlar la maldición de Hugo. Sin embargo, cuando sus poderes resurgen, la muerte y la destrucción regresan en forma de una inundación de ratas voraces, obligándoles a huir de nuevo hacia una isla profetizada.",
+    "description": "Sigue a los mellizos De Rune en su viaje al extremo sur intentando evadir la devastadora bendición encubierta de La Macula del pequeño Hugo. Esta aventura desgarradora combina intenso sigilo táctico con secuencias abrumadoras infestadas por inabarcables enjambres de ratas frenéticas en la desesperada Francia del siglo XIV.",
     "minRequirements": {
       "cpu": "Intel Core i5-4690K / AMD FX-8300",
       "gpu": "NVIDIA GeForce GTX 970 / AMD Radeon RX 590",
@@ -734,9 +734,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "plague_innocence",
     "title": "A Plague Tale: Innocence",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/752590/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/752590/library_600x900_2x.jpg",
     "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/752590/header.jpg",
-    "description": "[AVENTURA / NARRATIVO / SIGILO / TERROR / HISTÓRICO] Sigue la lúgubre historia de la joven Amicia y su hermano pequeño Hugo en un viaje por los momentos más oscuros de la historia. Perseguidos por la Inquisición y rodeados por imparables enjambres de ratas, Amicia y Hugo aprenderán a conocerse y a confiar entre sí mientras luchan por sobrevivir contra viento y marea y encontrar su lugar en el mundo en plena Guerra de los Cien Años.",
+    "description": "Francia, año de gracia 1349. Sumérgete en las deprimentes horas de la historia europea al amparo de Amicia de Rune y su frágil hermano. Perseguidos incesantemente por una opresiva congregación monástica y oleadas espectrales de ratas purulentas, confiarán su supervivencia exclusivamente a las antorchas y su astucia.",
     "minRequirements": {
       "cpu": "Intel Core i3-2100 / AMD FX-4100",
       "gpu": "NVIDIA GeForce GTX 660 / AMD Radeon HD 7870",
@@ -766,9 +766,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "nobodywantsdie",
     "title": "Nobody Wants to Die",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1939970/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1939970/library_600x900_2x.jpg",
     "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1939970/header.jpg",
-    "description": "[DETECTIVE / CYBERPUNK / NARRATIVO / NOIR / MISTERIO] Sumérgete en una Nueva York distópica del año 2329, donde la tecnología ofrece la vida eterna... a un precio. Encarna al detective James Karra en una investigación noir ultra-tecnológica. Utiliza herramientas de manipulación temporal y tecnología avanzada para reconstruir escenas del crimen y dar caza a un asesino en serie que ataca a la élite de la ciudad, en un mundo donde la muerte es casi un concepto olvidado.",
+    "description": "Entra en los empapados callejones de la distópica ciudad de Nueva York del año 2329. Enfrentado al crudo abismo del neonoir, manejarás la neuroprótesis temporal para avanzar, retroceder e investigar macabros campos hiperrealistas, buscando verdades siniestras que las corporaciones desean omitir.",
     "minRequirements": {
       "cpu": "Intel Core i3-8100 / AMD Ryzen 3 2300X",
       "gpu": "NVIDIA GeForce GTX 1660 Super / AMD Radeon RX 5600 XT",
@@ -798,9 +798,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "deathstranding_dc",
     "title": "DEATH STRANDING DIRECTOR'S CUT",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1850570/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1850570/library_600x900_2x.jpg",
     "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1850570/header.jpg",
-    "description": "[ACCIÓN / AVENTURA / MUNDO ABIERTO / NARRATIVO / CIENCIA FICCIÓN] La experiencia definitiva de la obra de Hideo Kojima. En el futuro, un evento misterioso conocido como el Death Stranding ha abierto una puerta entre los vivos y los muertos, lo que lleva a grotescas criaturas del otro mundo a deambular por un planeta en ruinas ante una sociedad desolada. Como Sam Porter Bridges, deberás entregar esperanza a la humanidad conectando a los últimos supervivientes de unos Estados Unidos diezmados.",
+    "description": "La experiencia extendida de Hideo Kojima te sumerge en un mundo apocalíptico desolado donde los mortales están atrapados entre dos realidades insidiosas. Tu labor como repartidor de esperanza es vital en esta reflexiva obra colaborativa conectando a la humanidad en una solitaria red contra los Entes Varados.",
     "minRequirements": {
       "cpu": "Intel Core i5-3470 / AMD Ryzen 3 1200",
       "gpu": "NVIDIA GeForce GTX 1050 / AMD Radeon RX 560",
@@ -830,9 +830,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "deathstranding_2",
     "title": "Death Stranding 2: On The Beach",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2902340/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2902340/library_600x900_2x.jpg",
     "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2902340/header.jpg",
-    "description": "[ACCIÓN / AVENTURA / NARRATIVO / MUNDO ABIERTO / CIENCIA FICCIÓN] Embárcate en una nueva odisea de conexión humana más allá de las Ciudades Unidas de América. Sam Porter Bridges regresa junto a la organización Drawbridge para explorar territorios desconocidos y enfrentarse a nuevas amenazas sobrenaturales en un mundo que cambia drásticamente. Con un sistema de físicas de terreno evolucionado y una narrativa cinematográfica rompedora, esta secuela redefine el viaje como el destino final.",
+    "description": "Sam Porter Bridges regresa para reconectar un mundo fragmentado más allá de las fronteras conocidas. A bordo de la nave Magellan y junto a la organización Drawbridge, deberás navegar por terrenos hostiles y enfrentar amenazas sobrenaturales en una odisea filosófica que redefine el viaje como el destino final.",
     "minRequirements": {},
     "genres": [
       "ACCIÓN",
@@ -857,9 +857,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "megabonk",
     "title": "Megabonk",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3182800/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3182800/library_600x900_2x.jpg",
     "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3182800/header.jpg",
-    "description": "[ACCIÓN / PLATAFORMAS / INDIE / CASUAL / DIFÍCIL] Adrenalina pura en formato bidimensional. Controlas a un héroe armado con un martillo gigante en un plataformas de acción vertiginosa. El sistema de combate se basa completamente en el 'momentum' y la inercia, exigiendo reflejos felinos para aplastar enemigos y superar intrincados niveles llenos de trampas, con un apartado artístico vibrante y mecánicas extremadamente satisfactorias.",
+    "description": "Combates de acción frenética y vibrante caos dominan tu trayectoria a lomos de un martillar gigante que se beneficia espectacularmente del rebote físico total. Machaca a contrarreloj y destroza escenarios en una entrega arcade brillante, caóticamente entretenida y visualmente estimulante.",
     "minRequirements": {},
     "genres": [
       "ACCIÓN",
@@ -884,9 +884,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "paragnosia",
     "title": "Paragnosia",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2954150/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2954150/library_600x900_2x.jpg",
     "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2954150/header.jpg",
-    "description": "[AVENTURA / PUZZLES / INDIE / CASUAL / MISTERIO] Un viaje al terror psicológico con estética retro de la era de los 32 bits (estilo PS1). Este título mezcla la exploración en primera persona con mecánicas clásicas de 'point-and-click'. Te adentrarás en un universo surrealista y opresivo, resolviendo puzles encriptados mientras la línea entre la realidad y la locura se difumina en tu intento por desenmascarar los oscuros secretos de una agencia paranormal.",
+    "description": "Explora perturbadores laberintos en primera persona sumergido en un crudo visual de la época PlayStation original. Superando intrincadas lógicas sobrenaturales y rompecabezas opresivos, perderás el control sobre tu propio sentido de la cordura ante anomalías grotescas del más allá en una aterradora pesquisa paranormal.",
     "minRequirements": {},
     "genres": [
       "AVENTURA",
@@ -911,9 +911,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "pluckysquire",
     "title": "El Escudero Valiente (The Plucky Squire)",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627800/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627800/library_600x900_2x.jpg",
     "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627800/header.jpg",
-    "description": "[ACCIÓN / AVENTURA / PLATAFORMAS / INDIE / PUZZLES] Cuando Jot, el valiente protagonista de un libro de cuentos, descubre que su archienemigo lo ha expulsado de las páginas de su propia historia, su mundo cambia para siempre. Esta innovadora aventura de acción te permite saltar literalmente entre niveles de plataformas 2D dibujados a mano dentro de las páginas del libro y un vasto mundo en 3D en la habitación de un niño, resolviendo puzles con palabras e ingenio.",
+    "description": "Una deliciosa aventura interdimensional en la vida de Jot un héroe literario expulsado directamente fuera de su imaginario reino bidimensional. Resuelve situaciones innovadoras moviéndote del colorido cuento ilustrado hacia los imponentes escenarios y plataformas del escritorio tridimensional interactuando con palabras dinámicas.",
     "minRequirements": {},
     "genres": [
       "ACCIÓN",
@@ -938,9 +938,9 @@ const SINGLE_PLAYER_GAMES = [
   {
     "id": "ninesols",
     "title": "Nine Sols",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809540/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809540/library_600x900_2x.jpg",
     "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809540/header.jpg",
-    "description": "[ACCIÓN / AVENTURA / PLATAFORMAS / INDIE / DIFÍCIL] Un metroidvania 2D dibujado a mano, ambientado en un mundo 'Taopunk' que mezcla ciberpunk y taoísmo. Acompaña a Yi, un héroe del pasado en busca de venganza contra los 9 Soles, formidables gobernantes de un reino desolado. Su combate es implacable y se inspira fuertemente en las mecánicas de desvío (parry) de Sekiro, exigiendo ritmo y precisión milimétrica en peleas contra jefes espectaculares.",
+    "description": "Un metroidvania 2D dibujado a mano en un universo 'Taopunk' que fusiona el ciberpunk con el taoísmo. Sigue al guerrero Yi en su cruzada de venganza contra los 9 Soles en un sistema de combate implacable basado en desvíos (parry) que exige una precisión milimétrica.",
     "minRequirements": {},
     "genres": [
       "ACCIÓN",
@@ -1585,7 +1585,7 @@ export default function App() {
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-500 pb-2 mb-4 pt-8 md:pt-0 tracking-tight text-center">
-            El Tribunal Gaming <span className="text-pink-500 text-2xl md:text-3xl">v6.5.0</span>
+            El Tribunal Gaming <span className="text-pink-500 text-2xl md:text-3xl">v6.6.0</span>
           </h1>
           <p className="text-gray-400 text-lg md:text-xl font-medium text-center">Temporada {mode === 'coop' ? 'Cooperativa' : 'Individual'} 2026</p>
         </header>
@@ -1622,7 +1622,7 @@ export default function App() {
                 </button>
               </nav>
               <div className="mt-auto p-6 border-t border-gray-800">
-                <p className="text-[10px] font-black text-gray-600 uppercase tracking-widest text-center">Tribunal Gaming Engine v6.5.0</p>
+                <p className="text-[10px] font-black text-gray-600 uppercase tracking-widest text-center">Tribunal Gaming Engine v6.6.0</p>
               </div>
             </div>
           </div>
@@ -2023,7 +2023,7 @@ export default function App() {
                 </div>
                 <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-gray-800/60 p-5 md:p-8 rounded-3xl border border-indigo-500/30 shadow-[0_0_20px_rgba(99,102,241,0.1)] transition-all">
                   <div className="flex items-center justify-between mb-1">
-                    <h3 className="font-bold text-lg text-white">v6.5.0 - The Quality Update</h3>
+                    <h3 className="font-bold text-lg text-white">v6.6.0 - The Quality Update</h3>
                     <span className="text-xs text-gray-500 font-bold px-2 py-1 bg-gray-800 rounded-lg whitespace-nowrap">9 ABR 2026</span>
                   </div>
                   <p className="text-sm text-gray-400 mt-2">
