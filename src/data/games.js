@@ -1,3 +1,7 @@
+/**
+ * Tribunal Gaming Data v6.6.0
+ * Last Updated: 9 ABR 2026
+ */
 export const RAW_GAMES = [
   // 🟢 SALVAVIDAS
   { id: 'g1', title: 'Buckshot Roulette', category: 'Salvavidas', steamId: '2835570', perf: 'Iván: 🟢 Excelente', desc: 'Un tenso duelo de ruleta rusa con escopeta donde la suerte y la lectura del rival lo son todo. Tendréis que usar objetos tácticos como lupas, esposas y cigarros curativos para ganar ventaja. La actualización multijugador lo convierte en un caos de faroles y traiciones.' },
