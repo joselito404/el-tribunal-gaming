@@ -2032,7 +2032,7 @@ export default function App() {
                 </div>
               </div>
 
-              {/* v6.4.1 */}}
+              {/* v6.4.1 */}
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-gray-900 bg-emerald-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 relative z-10">
                   <Play className="w-5 h-5" />
