@@ -676,15 +676,19 @@ export const SINGLE_PLAYER_GAMES = [
     links: { steam: "https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/" }
   },
   {
-    id: "3602160",
+    id: "2062430",
     title: "Ball x pit",
     isNew: true,
-    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3602160/library_600x900_2x.jpg",
-    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3602160/header.jpg",
+    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2062430/library_600x900_2x.jpg",
+    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2062430/header.jpg",
     description: "Plataformas de precisión basado puramente en físicas. Controla una bola a través de laberintos donde el impulso y la gravedad son tus únicas herramientas. Cada nivel es un puzle cinético que exige paciencia y un dominio absoluto del control analógico.",
     genres: ["FÍSICAS", "INDIE", "DIFÍCIL"],
-    hltb: { main: "2h", extras: "4h", completionist: "6h" },
-    links: { steam: "https://store.steampowered.com/app/3602160/Ball_x_pit/" }
+    hltb: { main: "19h", extras: "24h", completionist: "36h" },
+    links: {
+      steam: "https://store.steampowered.com/app/2062430/Ball_x_pit/",
+      metacritic: "https://www.metacritic.com/game/ball-x-pit/",
+      hltb: "https://howlongtobeat.com/game/160105"
+    }
   },
   {
     id: "1746030",
@@ -821,10 +825,9 @@ export const SINGLE_PLAYER_GAMES = [
       "CIENCIA FICCIÓN"
     ],
     "hltb": {
-      "general": "55h",
-      "main": "34h",
-      "extras": "62h",
-      "completionist": "115h"
+      "main": "35½h",
+      "extras": "63h",
+      "completionist": "116h"
     },
     "links": {
       "steam": "https://store.steampowered.com/app/3280350/DEATH_STRANDING_2_ON_THE_BEACH/",
@@ -836,8 +839,8 @@ export const SINGLE_PLAYER_GAMES = [
   {
     "id": "megabonk",
     "title": "Megabonk",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2864660/library_600x900_2x.jpg",
-    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2864660/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405340/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405340/header.jpg",
     "description": "Combates de acción frenética y vibrante caos dominan tu trayectoria a lomos de un martillar gigante que se beneficia espectacularmente del rebote físico total. Machaca a contrarreloj y destroza escenarios en una entrega arcade brillante, caóticamente entretenida y visualmente estimulante.",
     "minRequirements": {},
     "genres": [
@@ -848,42 +851,14 @@ export const SINGLE_PLAYER_GAMES = [
       "DIFÍCIL"
     ],
     "hltb": {
-      "general": "---",
-      "main": "---",
-      "extras": "---",
-      "completionist": "---"
+      "main": "14h",
+      "extras": "31½h",
+      "completionist": "55½h"
     },
     "links": {
-      "steam": "https://store.steampowered.com/app/2864660/Megabonk/",
-      "metacritic": "---",
+      "steam": "https://store.steampowered.com/app/3405340/Megabonk/",
+      "metacritic": "https://www.metacritic.com/game/megabonk/",
       "hltb": "https://howlongtobeat.com/game/160475"
-    },
-    "isNew": true
-  },
-  {
-    "id": "paragnosia",
-    "title": "Paragnosia",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2954150/library_600x900_2x.jpg",
-    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2954150/header.jpg",
-    "description": "Explora perturbadores laberintos en primera persona sumergido en un crudo visual de la época PlayStation original. Superando intrincadas lógicas sobrenaturales y rompecabezas opresivos, perderás el control sobre tu propio sentido de la cordura ante anomalías grotescas del más allá en una aterradora pesquisa paranormal.",
-    "minRequirements": {},
-    "genres": [
-      "AVENTURA",
-      "PUZZLES",
-      "INDIE",
-      "CASUAL",
-      "MISTERIO"
-    ],
-    "hltb": {
-      "general": "---",
-      "main": "---",
-      "extras": "---",
-      "completionist": "---"
-    },
-    "links": {
-      "steam": "https://store.steampowered.com/app/2954150/Paragnosia/",
-      "metacritic": "---",
-      "hltb": "https://howlongtobeat.com/game/153723"
     },
     "isNew": true
   },

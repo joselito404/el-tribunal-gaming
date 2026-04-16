@@ -639,7 +639,7 @@ export default function App() {
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-500 pb-2 mb-4 pt-8 md:pt-0 tracking-tight text-center">
-            El Tribunal Gaming <span className="text-pink-500 text-2xl md:text-3xl">v6.7.1</span>
+            El Tribunal Gaming <span className="text-pink-500 text-2xl md:text-3xl">v6.7.3</span>
           </h1>
           <p className="text-gray-400 text-lg md:text-xl font-medium text-center">Temporada {mode === 'coop' ? 'Cooperativa' : 'Individual'} 2026</p>
         </header>
@@ -676,7 +676,7 @@ export default function App() {
                 </button>
               </nav>
               <div className="mt-auto p-6 border-t border-gray-800">
-                <p className="text-[10px] font-black text-gray-600 uppercase tracking-widest text-center">Tribunal Gaming Engine v6.7.1</p>
+                <p className="text-[10px] font-black text-gray-600 uppercase tracking-widest text-center">Tribunal Gaming Engine v6.7.3</p>
               </div>
             </div>
           </div>
@@ -1069,6 +1069,38 @@ export default function App() {
           <div className="bg-gray-900/50 backdrop-blur-xl rounded-3xl p-6 md:p-10 shadow-2xl border border-gray-800 max-w-4xl mx-auto text-gray-300">
             <h2 className="text-3xl font-black text-white mb-8 border-b border-gray-800 pb-4">Bitácora de Versiones</h2>
             <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-orange-500/50 before:via-gray-800/50 before:to-gray-800/20">
+
+              {/* v6.7.3 */}
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-gray-900 bg-indigo-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 relative z-10">
+                  <CheckCircle className="w-5 h-5" />
+                </div>
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-gray-800/60 p-5 md:p-8 rounded-3xl border border-indigo-500/30 shadow-[0_0_20px_rgba(99,102,241,0.1)] transition-all">
+                  <div className="flex items-center justify-between mb-1">
+                    <h3 className="font-bold text-lg text-white">v6.7.3 - Limpieza de Catálogo y Ajuste de UI</h3>
+                    <span className="text-xs text-gray-500 font-bold px-2 py-1 bg-gray-800 rounded-lg whitespace-nowrap">16 ABR 2026</span>
+                  </div>
+                  <p className="text-sm text-gray-400 mt-2">
+                    Eliminado Paragnosia del tribunal. Corregidas imágenes críticas de Ball x pit y Death Stranding 2. Eliminado el indicador visual de "Nuevo" de las tarjetas; la sección de novedades ahora ordena los títulos de más reciente a más antiguo según su posición en la base de datos.
+                  </p>
+                </div>
+              </div>
+
+              {/* v6.7.2 */}
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-gray-900 bg-indigo-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 relative z-10">
+                  <CheckCircle className="w-5 h-5" />
+                </div>
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-gray-800/60 p-5 md:p-8 rounded-3xl border border-indigo-500/30 shadow-[0_0_20px_rgba(99,102,241,0.1)] transition-all">
+                  <div className="flex items-center justify-between mb-1">
+                    <h3 className="font-bold text-lg text-white">v6.7.2 - Extracción de Tiempos y Enlaces (HLTB)</h3>
+                    <span className="text-xs text-gray-500 font-bold px-2 py-1 bg-gray-800 rounded-lg whitespace-nowrap">16 ABR 2026</span>
+                  </div>
+                  <p className="text-sm text-gray-400 mt-2">
+                    Aplicada extracción de datos en vivo desde HowLongToBeat para Ball x pit, Megabonk, DS2 y Paragnosia. AppIDs corregidos y sistema de 3 enlaces (Steam, Meta, HLTB) verificado y operativo.
+                  </p>
+                </div>
+              </div>
 
                                           {/* v6.7.1 */}
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
@@ -2870,7 +2902,7 @@ export default function App() {
                     });
 
                     if (librarySort === 'news') {
-                      filteredLibrary.sort((a, b) => (a.isNew === b.isNew) ? 0 : a.isNew ? -1 : 1);
+                      filteredLibrary = [...filteredLibrary].reverse();
                     } else if (librarySort === 'alpha') {
                       filteredLibrary.sort((a, b) => a.title.localeCompare(b.title));
                     } else if (librarySort === 'short') {
@@ -2912,12 +2944,6 @@ export default function App() {
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             alt={game.title}
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/20 to-transparent"></div>
-                          {game.isNew && (
-                            <div className="absolute top-4 left-4 bg-indigo-600/90 backdrop-blur-md px-3 py-1 rounded-xl border border-indigo-400/50 shadow-lg animate-pulse">
-                               <span className="text-[10px] text-white font-black uppercase tracking-widest">NUEVO</span>
-                            </div>
-                          )}
                           <div className="absolute top-4 right-4 flex flex-col gap-2 z-10">
                             <div className="bg-gray-950/80 backdrop-blur-md px-3 py-1 mr-[-2px] rounded-xl border border-gray-700/50 flex flex-col items-center shadow-lg">
                                <span className="text-[9px] text-gray-500 font-bold uppercase tracking-widest mb-0.5">Media</span>

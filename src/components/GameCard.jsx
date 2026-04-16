@@ -11,12 +11,6 @@ const GameCard = ({ game }) => {
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80" />
-        
-        {game.isNew && (
-          <div className="absolute top-4 left-4 px-3 py-1 bg-indigo-500 text-white text-[10px] font-black rounded-full shadow-lg flex items-center gap-1 animate-pulse">
-            <Zap className="w-3 h-3 fill-current" /> NOVEDAD
-          </div>
-        )}
 
         <div className="absolute top-4 right-4 px-3 py-1 bg-black/60 backdrop-blur-md border border-white/10 rounded-full flex items-center gap-1.5">
           <Star className="w-3 h-3 text-yellow-400 fill-current" />

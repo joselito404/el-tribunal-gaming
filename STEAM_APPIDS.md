@@ -64,7 +64,6 @@
 | Nobody Wants to Die | `1939970` |
 | Outer Wilds | `753640` |
 | Palworld | `1623730` |
-| Paragnosia | `2954150` |
 | Party Animals | `1260320` |
 | PEAK | `3527290` |
 | Phasmophobia | `739630` |
