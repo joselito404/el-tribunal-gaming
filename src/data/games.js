@@ -492,16 +492,16 @@ export const SINGLE_PLAYER_GAMES = [
     "description": "Seis años después del desastre biológico en Raccoon City, Leon S. Kennedy debe rescatar a la hija del presidente en un pueblo europeo."
   },
   {
-    id: "1888140",
+    id: "1888930",
     title: "The Last of Us Part I",
     metacritic: 89,
     isNew: true,
-    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888140/library_600x900_2x.jpg",
-    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888140/header.jpg",
+    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888930/library_600x900_2x.jpg",
+    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888930/header.jpg",
     description: "En una civilización devastada por una pandemia fúngica, Joel, un contrabandista endurecido, debe escoltar a la joven Ellie a través de unos Estados Unidos postapocalípticos. Una obra maestra narrativa que explora la moralidad, el sacrificio y los límites de la supervivencia humana.",
     genres: ["NARRATIVO", "ACCIÓN", "SIGILO"],
     hltb: { main: "14h", extras: "16h", completionist: "23h" },
-    links: { steam: "https://store.steampowered.com/app/1888140/The_Last_of_Us_Part_I/" }
+    links: { steam: "https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/" }
   },
   {
     "id": "portal2",
@@ -676,27 +676,27 @@ export const SINGLE_PLAYER_GAMES = [
     links: { steam: "https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/" }
   },
   {
-    id: "3110390",
+    id: "3602160",
     title: "Ball x pit",
     isNew: true,
-    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3110390/library_600x900_2x.jpg",
-    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3110390/header.jpg",
+    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3602160/library_600x900_2x.jpg",
+    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3602160/header.jpg",
     description: "Plataformas de precisión basado puramente en físicas. Controla una bola a través de laberintos donde el impulso y la gravedad son tus únicas herramientas. Cada nivel es un puzle cinético que exige paciencia y un dominio absoluto del control analógico.",
     genres: ["FÍSICAS", "INDIE", "DIFÍCIL"],
     hltb: { main: "2h", extras: "4h", completionist: "6h" },
-    links: { steam: "https://store.steampowered.com/app/3110390/Ball_x_pit/" }
+    links: { steam: "https://store.steampowered.com/app/3602160/Ball_x_pit/" }
   },
   {
-    id: "2274640",
+    id: "1746030",
     title: "Murders on the Yangtze River",
     metacritic: 83,
     isNew: true,
-    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2274640/library_600x900_2x.jpg",
-    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2274640/header.jpg",
+    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1746030/library_600x900_2x.jpg",
+    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1746030/header.jpg",
     description: "Una aventura de misterio al estilo 'whodunnit' ambientada en la China de principios del siglo XX. Investiga crímenes imposibles a bordo de un barco por el río Yangtsé utilizando el razonamiento lógico para desvelar una conspiración histórica.",
     genres: ["DETECTIVE", "AVENTURA", "PUZLES", "MISTERIO", "RICA HISTORIA"],
     hltb: { main: "16h", extras: "17h", completionist: "18h" },
-    links: { steam: "https://store.steampowered.com/app/2274640/Murders_on_the_Yangtze_River/" }
+    links: { steam: "https://store.steampowered.com/app/1746030/Murders_on_the_Yangtze_River/" }
   },
   {
     "id": "plague_requiem",
@@ -809,8 +809,8 @@ export const SINGLE_PLAYER_GAMES = [
   {
     "id": "deathstranding_2",
     "title": "Death Stranding 2: On The Beach",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2902340/library_600x900_2x.jpg",
-    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2902340/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3280350/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3280350/header.jpg",
     "description": "Sam Porter Bridges regresa para reconectar un mundo fragmentado más allá de las fronteras conocidas. A bordo de la nave Magellan y junto a la organización Drawbridge, deberás navegar por terrenos hostiles y enfrentar amenazas sobrenaturales en una odisea filosófica que redefine el viaje como el destino final.",
     "minRequirements": {},
     "genres": [
@@ -827,7 +827,7 @@ export const SINGLE_PLAYER_GAMES = [
       "completionist": "115h"
     },
     "links": {
-      "steam": "https://store.steampowered.com/app/2902340/DEATH_STRANDING_2_ON_THE_BEACH/",
+      "steam": "https://store.steampowered.com/app/3280350/DEATH_STRANDING_2_ON_THE_BEACH/",
       "metacritic": "https://www.metacritic.com/game/pc/death-stranding-2-on-the-beach",
       "hltb": "https://howlongtobeat.com/game/118315"
     },
@@ -836,8 +836,8 @@ export const SINGLE_PLAYER_GAMES = [
   {
     "id": "megabonk",
     "title": "Megabonk",
-    "img": "",
-    "headerImg": "",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2864660/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2864660/header.jpg",
     "description": "Combates de acción frenética y vibrante caos dominan tu trayectoria a lomos de un martillar gigante que se beneficia espectacularmente del rebote físico total. Machaca a contrarreloj y destroza escenarios en una entrega arcade brillante, caóticamente entretenida y visualmente estimulante.",
     "minRequirements": {},
     "genres": [
@@ -854,7 +854,7 @@ export const SINGLE_PLAYER_GAMES = [
       "completionist": "---"
     },
     "links": {
-      "steam": "https://store.steampowered.com/app/3182800/Megabonk/",
+      "steam": "https://store.steampowered.com/app/2864660/Megabonk/",
       "metacritic": "---",
       "hltb": "https://howlongtobeat.com/game/160475"
     },
@@ -863,8 +863,8 @@ export const SINGLE_PLAYER_GAMES = [
   {
     "id": "paragnosia",
     "title": "Paragnosia",
-    "img": "",
-    "headerImg": "",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2954150/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2954150/header.jpg",
     "description": "Explora perturbadores laberintos en primera persona sumergido en un crudo visual de la época PlayStation original. Superando intrincadas lógicas sobrenaturales y rompecabezas opresivos, perderás el control sobre tu propio sentido de la cordura ante anomalías grotescas del más allá en una aterradora pesquisa paranormal.",
     "minRequirements": {},
     "genres": [
@@ -890,8 +890,8 @@ export const SINGLE_PLAYER_GAMES = [
   {
     "id": "pluckysquire",
     "title": "El Escudero Valiente (The Plucky Squire)",
-    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627800/library_600x900_2x.jpg",
-    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627800/header.jpg",
+    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627570/library_600x900_2x.jpg",
+    "headerImg": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627570/header.jpg",
     "description": "Una deliciosa aventura interdimensional en la vida de Jot un héroe literario expulsado directamente fuera de su imaginario reino bidimensional. Resuelve situaciones innovadoras moviéndote del colorido cuento ilustrado hacia los imponentes escenarios y plataformas del escritorio tridimensional interactuando con palabras dinámicas.",
     "minRequirements": {},
     "genres": [
@@ -908,7 +908,7 @@ export const SINGLE_PLAYER_GAMES = [
       "completionist": "---"
     },
     "links": {
-      "steam": "https://store.steampowered.com/app/1627800/The_Plucky_Squire/",
+      "steam": "https://store.steampowered.com/app/1627570/The_Plucky_Squire/",
       "metacritic": "https://www.metacritic.com/game/pc/the-plucky-squire",
       "hltb": "https://howlongtobeat.com/game/109156"
     },

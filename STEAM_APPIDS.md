@@ -9,7 +9,7 @@
 | Abiotic Factor | `427410` |
 | Among Us | `945360` |
 | Baldur's Gate 3 | `1086940` |
-| Ball x pit | `3110390` |
+| Ball x pit | `3602160` |
 | Battlefield 6 | `2807960` |
 | Biped 2 | `2560240` |
 | Bloons TD 6 | `960090` |
@@ -24,13 +24,13 @@
 | Dark Souls III | `374320` |
 | Dead by Daylight | `381210` |
 | Dead Island 2 | `934700` |
-| Death Stranding 2: On The Beach | `2902340` |
+| Death Stranding 2: On The Beach | `3280350` |
 | DEATH STRANDING DIRECTOR'S CUT | `1850570` |
 | Deep Rock Galactic | `548430` |
 | Demonologist | `1929610` |
 | Disco Elysium - The Final Cut | `632470` |
 | Dying Light: The Beast | `3008130` |
-| El Escudero Valiente (The Plucky Squire) | `1627800` |
+| El Escudero Valiente (The Plucky Squire) | `1627570` |
 | Elden Ring | `1245620` |
 | Enshrouded | `1203620` |
 | Escape Simulator 2 | `2879840` |
@@ -56,9 +56,9 @@
 | Little Nightmares II | `860510` |
 | Little Nightmares III | `1392860` |
 | Mage Arena | `3716600` |
-| Megabonk | `3182800` |
+| Megabonk | `2864660` |
 | Mimesis | `2827200` |
-| Murders on the Yangtze River | `2274640` |
+| Murders on the Yangtze River | `1746030` |
 | Murky Divers | `2963880` |
 | Nine Sols | `1809540` |
 | Nobody Wants to Die | `1939970` |
@@ -86,7 +86,7 @@
 | Slay the Spire 2 | `2868840` |
 | Sons Of The Forest | `1326470` |
 | Stardew Valley | `413150` |
-| The Last of Us Part I | `1888140` |
+| The Last of Us Part I | `1888930` |
 | The Outlast Trials | `1304930` |
 | The Witcher 3: Wild Hunt | `292030` |
 | Ultimate Chicken Horse | `386940` |
