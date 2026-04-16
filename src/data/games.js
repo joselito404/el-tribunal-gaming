@@ -676,15 +676,15 @@ export const SINGLE_PLAYER_GAMES = [
     links: { steam: "https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/" }
   },
   {
-    id: "3602160",
+    id: "2062430",
     title: "Ball x pit",
-    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3602160/library_600x900_2x.jpg",
-    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3602160/header.jpg",
+    img: "https://placehold.co/600x900/1e1b4b/6366f1?text=Ball+x+pit",
+    headerImg: "https://placehold.co/1200x600/1e1b4b/6366f1?text=Ball+x+pit",
     description: "Plataformas de precisión basado puramente en físicas. Controla una bola a través de laberintos donde el impulso y la gravedad son tus únicas herramientas.",
     genres: ["FÍSICAS", "INDIE", "DIFÍCIL"],
     hltb: { main: "19h", extras: "24h", completionist: "36h" },
-    links: { 
-      steam: "https://store.steampowered.com/app/3602160/",
+    links: {
+      steam: "https://store.steampowered.com/app/2062430/",
       metacritic: "https://www.metacritic.com/game/ball-x-pit/",
       hltb: "https://howlongtobeat.com/game/169298"
     }
@@ -812,12 +812,12 @@ export const SINGLE_PLAYER_GAMES = [
   {
     id: "3280350",
     title: "Death Stranding 2: On The Beach",
-    img: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3280350/library_600x900_2x.jpg",
-    headerImg: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3280350/header.jpg",
+    img: "https://image.api.playstation.com/vulcan/ap/rnd/202311/2812/37ee18bdad3e4a2d8299ec51a3d132de9dd67ff508de0104.png",
+    headerImg: "https://image.api.playstation.com/vulcan/ap/rnd/202311/2812/37ee18bdad3e4a2d8299ec51a3d132de9dd67ff508de0104.png",
     description: "Sam Porter Bridges regresa para reconectar un mundo fragmentado más allá de las fronteras conocidas en esta secuela de Hideo Kojima.",
     genres: ["ACCIÓN", "AVENTURA", "NARRATIVO"],
     hltb: { main: "35h", extras: "63h", completionist: "116h" },
-    links: { 
+    links: {
       steam: "https://store.steampowered.com/app/3280350/",
       metacritic: "https://www.metacritic.com/game/death-stranding-2-on-the-beach/",
       hltb: "https://howlongtobeat.com/game/118225"
