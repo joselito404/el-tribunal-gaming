@@ -676,15 +676,15 @@ export const SINGLE_PLAYER_GAMES = [
     links: { steam: "https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/" }
   },
   {
-    id: "2062430",
+    id: "3110390",
     title: "Ball x pit",
-    img: "/ballxpit.jpg",
-    headerImg: "/ballxpit-header.jpg",
+    img: "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='900'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%231e1b4b' /%3E%3Cstop offset='100%25' stop-color='%234338ca' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23bg)'/%3E%3Ctext x='50%25' y='50%25' font-family='sans-serif' font-size='48' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'%3EBALL X PIT%3C/text%3E%3C/svg%3E",
+    headerImg: "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%231e1b4b' /%3E%3Cstop offset='100%25' stop-color='%234338ca' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23bg)'/%3E%3Ctext x='50%25' y='50%25' font-family='sans-serif' font-size='64' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'%3EBALL X PIT%3C/text%3E%3C/svg%3E",
     description: "Plataformas de precisión basado puramente en físicas. Controla una bola a través de laberintos donde el impulso y la gravedad son tus únicas herramientas.",
     genres: ["FÍSICAS", "INDIE", "DIFÍCIL"],
-    hltb: { main: "19h", extras: "24h", completionist: "36h" },
+    hltb: { main: "2h", extras: "4h", completionist: "6h" },
     links: { 
-      steam: "https://store.steampowered.com/app/2062430/",
+      steam: "https://store.steampowered.com/app/3110390/",
       metacritic: "https://www.metacritic.com/game/ball-x-pit/",
       hltb: "https://howlongtobeat.com/game/169298"
     }
@@ -810,17 +810,17 @@ export const SINGLE_PLAYER_GAMES = [
     "isNew": true
   },
   {
-    id: "3280350",
+    id: "2902340",
     title: "Death Stranding 2: On The Beach",
-    img: "/ds2.jpg",
-    headerImg: "/ds2-header.jpg",
-    description: "Sam Porter Bridges regresa para reconectar un mundo fragmentado más allá de las fronteras conocidas en esta secuela de Hideo Kojima.",
+    img: "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='900'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23450a0a' /%3E%3Cstop offset='100%25' stop-color='%23dc2626' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23bg)'/%3E%3Ctext x='50%25' y='50%25' font-family='sans-serif' font-size='42' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'%3EDEATH STRANDING 2%3C/text%3E%3C/svg%3E",
+    headerImg: "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='600'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23450a0a' /%3E%3Cstop offset='100%25' stop-color='%23dc2626' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23bg)'/%3E%3Ctext x='50%25' y='50%25' font-family='sans-serif' font-size='64' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'%3EDEATH STRANDING 2%3C/text%3E%3C/svg%3E",
+    description: "Sam Porter Bridges regresa para reconectar un mundo fragmentado más allá de las fronteras conocidas in esta secuela de Hideo Kojima.",
     genres: ["ACCIÓN", "AVENTURA", "NARRATIVO"],
-    hltb: { main: "35½h", extras: "63h", completionist: "116h" },
+    hltb: { main: "34h", extras: "62h", completionist: "115h" },
     links: { 
-      steam: "https://store.steampowered.com/app/3280350/",
+      steam: "https://store.steampowered.com/app/2902340/",
       metacritic: "https://www.metacritic.com/game/death-stranding-2-on-the-beach/",
-      hltb: "https://howlongtobeat.com/game/118225"
+      hltb: "https://howlongtobeat.com/game/118315"
     }
   },
   {
