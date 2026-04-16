@@ -1,16 +1,16 @@
-import React from 'react';
-import { Clock, Star, ExternalLink, Zap } from 'lucide-react';
+/* eslint-disable no-unused-vars */
+import { Clock, Star, ExternalLink } from 'lucide-react';
 
 const GameCard = ({ game }) => {
   return (
     <div className="group relative bg-gray-800/40 rounded-3xl border border-white/5 overflow-hidden hover:border-indigo-500/50 transition-all duration-500 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4)] hover:-translate-y-2">
-      <div className="relative aspect-[2/3] overflow-hidden">
+      <div className="relative aspect-2/3 overflow-hidden">
         <img 
           src={game.img} 
           alt={game.title}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-80" />
+        <div className="absolute inset-0 bg-linear-to-t from-gray-900 via-transparent to-transparent opacity-80" />
 
         <div className="absolute top-4 right-4 px-3 py-1 bg-black/60 backdrop-blur-md border border-white/10 rounded-full flex items-center gap-1.5">
           <Star className="w-3 h-3 text-yellow-400 fill-current" />

@@ -1,7 +1,8 @@
-import React, { useState, useMemo, useEffect } from 'react';
-import Header from './components/Header';
-import GameCard from './components/GameCard';
+import { useState, useMemo, useEffect } from 'react';
+
+
 import { SINGLE_PLAYER_GAMES, GAMES, PLAYERS } from './data/games';
+/* eslint-disable no-unused-vars */
 import { 
   Filter, ListFilter, Trophy, Clock,
   Users, BarChart3, History, Menu, X, Wifi, WifiOff, LogIn, ChevronLeft, 
@@ -9,6 +10,7 @@ import {
   ExternalLink, Search, ArrowUp, ArrowDown, Gamepad2, Layers, BookOpen, 
   Brain, Dices, Wallet, RotateCcw, Share2, Heart, Zap, MessageSquare, Trash2, Smile
 } from 'lucide-react';
+/* eslint-enable no-unused-vars */
 import { signInAnonymously, onAuthStateChanged } from 'firebase/auth';
 import { collection, doc, setDoc, onSnapshot, updateDoc, deleteField } from 'firebase/firestore';
 import { db, auth } from './firebase';
@@ -21,8 +23,9 @@ const EMOJI_PALETTE = ["🔥","🐕","👾","💀","👑","💩"];
 // ----------------------------------------------------------------------------
 // RENDER: TARJETA DE JUEGO (STEAM MODE)
 // ----------------------------------------------------------------------------
+/* eslint-disable-next-line no-unused-vars */
 const CoopGameCard = ({ game, score, onVote }) => {
-  const players = ['Jose', 'Mario', 'Iván', 'Carmen', 'Lázaro', 'Alejandro'];
+
   const isProhibida = game.category === 'Zona Prohibida';
   const isGuerreros = game.category === 'Guerreros';
 
@@ -67,9 +70,9 @@ const CoopGameCard = ({ game, score, onVote }) => {
             <p className="text-gray-300 text-base mb-6 leading-relaxed opacity-95">{game.desc}</p>
 
             <div className="flex items-center gap-3 mb-6 text-sm font-semibold bg-gray-950 p-4 rounded-xl border border-gray-800 shadow-inner">
-              {isProhibida ? <ShieldAlert className="w-5 h-5 flex-shrink-0 text-red-500" /> :
-                isGuerreros ? <AlertTriangle className="w-5 h-5 flex-shrink-0 text-yellow-500" /> :
-                  <CheckCircle className="w-5 h-5 flex-shrink-0 text-green-500" />}
+              {isProhibida ? <ShieldAlert className="w-5 h-5 shrink-0 text-red-500" /> :
+                isGuerreros ? <AlertTriangle className="w-5 h-5 shrink-0 text-yellow-500" /> :
+                  <CheckCircle className="w-5 h-5 shrink-0 text-green-500" />}
               <span className={isProhibida ? 'text-red-400' : isGuerreros ? 'text-yellow-400' : 'text-green-400'}>
                 {game.perf}
               </span>
@@ -241,7 +244,7 @@ export default function App() {
     } else {
       setVotedSnapshot([]);
     }
-  }, [hideVoted, view, currentPlayer]);
+  }, [hideVoted, view, currentPlayer, evaluations, votes]);
 
   const handleBankruptcy = async () => {
     if (!currentPlayer) return;
@@ -514,6 +517,7 @@ export default function App() {
     triunvirato_total: getCalculatedRanking(['Jose', 'Mario', 'Iván'], 'total', votes),
     global_eval_media: getCalculatedRanking(PLAYERS, 'media', evaluations),
     ranking_fichas: PLAYERS.map(p => ({ player: p, score: playerChips[p] || 0 })).sort((a, b) => b.score - a.score)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }), [votes, evaluations, playerChips]);
 
   const playerStats = useMemo(() => {
@@ -577,7 +581,7 @@ export default function App() {
       <div className="min-h-screen bg-gray-950 flex flex-col items-center justify-center p-6 text-white">
         <div className="bg-gray-900 border border-gray-800 rounded-3xl p-8 md:p-12 w-full max-w-2xl text-center shadow-2xl">
           <ShieldAlert className="w-16 h-16 text-indigo-500 mx-auto mb-6" />
-          <h1 className="text-4xl md:text-5xl font-black mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500">
+          <h1 className="text-4xl md:text-5xl font-black mb-4 bg-clip-text text-transparent bg-linear-to-r from-indigo-400 to-purple-500">
             Identificación Requerida
           </h1>
           <p className="text-gray-400 text-lg mb-10">
@@ -615,7 +619,7 @@ export default function App() {
   };
 
   return (
-    <div className={`min-h-[100dvh] bg-[#0b0f19] text-gray-100 p-4 md:p-8 font-sans pb-24 selection:bg-indigo-500/30 ${theme === 'dark' ? 'dark' : ''}`}>
+    <div className={`min-h-dvh bg-[#0b0f19] text-gray-100 p-4 md:p-8 font-sans pb-24 selection:bg-indigo-500/30 ${theme === 'dark' ? 'dark' : ''}`}>
       <div className="max-w-[1400px] mx-auto">
 
         {/* HEADER Y ESTADO DE LA NUBE */}
@@ -638,7 +642,7 @@ export default function App() {
             </button>
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-500 pb-2 mb-4 pt-8 md:pt-0 tracking-tight text-center">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-linear-to-br from-indigo-400 via-purple-400 to-pink-500 pb-2 mb-4 pt-8 md:pt-0 tracking-tight text-center">
             El Tribunal Gaming <span className="text-pink-500 text-2xl md:text-3xl">v6.7.3</span>
           </h1>
           <p className="text-gray-400 text-lg md:text-xl font-medium text-center">Temporada {mode === 'coop' ? 'Cooperativa' : 'Individual'} 2026</p>
@@ -756,11 +760,11 @@ export default function App() {
             {/* Cabecera Informativa: Escala de Ganas */}
             <div className="w-full mx-auto mb-10 bg-gray-900/40 border border-gray-800 p-6 rounded-3xl shadow-2xl backdrop-blur-sm">
               <div className="flex items-center justify-center gap-3 mb-6">
-                <div className="h-px w-12 bg-gradient-to-r from-transparent to-indigo-500"></div>
+                <div className="h-px w-12 bg-linear-to-r from-transparent to-indigo-500"></div>
                 <h2 className="text-indigo-400 font-black uppercase tracking-[0.3em] text-xs text-center">
                   Escala de Ganas (Criterio de Voto)
                 </h2>
-                <div className="h-px w-12 bg-gradient-to-l from-transparent to-indigo-500"></div>
+                <div className="h-px w-12 bg-linear-to-l from-transparent to-indigo-500"></div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-[12px]">
@@ -918,7 +922,7 @@ export default function App() {
                         if (col.config.type === 'fichas') {
                           return (
                             <div key={gameOrChip.player} className="bg-gray-800/60 p-5 rounded-2xl flex items-center justify-between border border-gray-700/50 hover:border-emerald-500/50 transition-all gap-4 relative overflow-hidden group">
-                              <div className={`w-12 h-12 shrink-0 rounded-xl flex items-center justify-center font-black text-xl ${index === 0 ? 'bg-gradient-to-br from-yellow-300 to-yellow-600 text-yellow-950 shadow-[0_0_15px_rgba(234,179,8,0.4)]' : 'bg-gray-900 text-gray-500 border border-gray-800'}`}>
+                              <div className={`w-12 h-12 shrink-0 rounded-xl flex items-center justify-center font-black text-xl ${index === 0 ? 'bg-linear-to-br from-yellow-300 to-yellow-600 text-yellow-950 shadow-[0_0_15px_rgba(234,179,8,0.4)]' : 'bg-gray-900 text-gray-500 border border-gray-800'}`}>
                                 #{index + 1}
                               </div>
                               <div className="flex-1">
@@ -943,9 +947,9 @@ export default function App() {
                             {index === 2 && <div className="absolute top-0 left-0 w-1 h-full bg-amber-700"></div>}
 
                             <div className="flex items-center gap-4 w-full sm:w-auto pl-2">
-                              <div className={`w-12 h-12 shrink-0 rounded-xl flex items-center justify-center font-black text-xl ${index === 0 ? 'bg-gradient-to-br from-yellow-300 to-yellow-600 text-yellow-950 shadow-[0_0_15px_rgba(234,179,8,0.4)]' :
-                                index === 1 ? 'bg-gradient-to-br from-gray-200 to-gray-400 text-gray-900' :
-                                  index === 2 ? 'bg-gradient-to-br from-amber-500 to-amber-700 text-amber-100' :
+                              <div className={`w-12 h-12 shrink-0 rounded-xl flex items-center justify-center font-black text-xl ${index === 0 ? 'bg-linear-to-br from-yellow-300 to-yellow-600 text-yellow-950 shadow-[0_0_15px_rgba(234,179,8,0.4)]' :
+                                index === 1 ? 'bg-linear-to-br from-gray-200 to-gray-400 text-gray-900' :
+                                  index === 2 ? 'bg-linear-to-br from-amber-500 to-amber-700 text-amber-100' :
                                     'bg-gray-900 text-gray-500 border border-gray-800'
                                 }`}>
                                 #{index + 1}
@@ -1068,7 +1072,7 @@ export default function App() {
         {view === 'changelog' && (
           <div className="bg-gray-900/50 backdrop-blur-xl rounded-3xl p-6 md:p-10 shadow-2xl border border-gray-800 max-w-4xl mx-auto text-gray-300">
             <h2 className="text-3xl font-black text-white mb-8 border-b border-gray-800 pb-4">Bitácora de Versiones</h2>
-            <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-orange-500/50 before:via-gray-800/50 before:to-gray-800/20">
+            <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-linear-to-b before:from-orange-500/50 before:via-gray-800/50 before:to-gray-800/20">
 
               {/* v6.7.3 */}
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
@@ -2222,10 +2226,10 @@ export default function App() {
               <div className="flex flex-col items-center">
                 <div className="relative w-[320px] h-[320px] md:w-[500px] md:h-[500px] mb-10">
                   <div className="absolute -top-6 left-1/2 -translate-x-1/2 z-30 text-yellow-400 drop-shadow-[0_0_15px_rgba(250,204,21,1)]">
-                    <div className="w-0 h-0 border-l-[20px] border-l-transparent border-r-[20px] border-r-transparent border-t-[30px] border-t-current"></div>
+                    <div className="w-0 h-0 border-l-20 border-l-transparent border-r-20 border-r-transparent border-t-30 border-t-current"></div>
                   </div>
                   <div
-                    className="w-full h-full rounded-full border-[12px] border-gray-950 overflow-hidden relative shadow-[0_0_80px_rgba(0,0,0,0.8)] transition-transform duration-[5000ms] cubic-bezier(0.1, 0.9, 0.2, 1)"
+                    className="w-full h-full rounded-full border-12 border-gray-950 overflow-hidden relative shadow-[0_0_80px_rgba(0,0,0,0.8)] transition-transform duration-5000 cubic-bezier(0.1, 0.9, 0.2, 1)"
                     style={{
                       transform: `rotate(${rotation - (360 / activePool.length / 2)}deg)`,
                       background: `conic-gradient(${activePool.map((g, i) => `${i % 2 === 0 ? '#b91c1c' : '#111827'} ${(i * 360) / activePool.length}deg ${((i + 1) * 360) / activePool.length}deg`).join(', ')})`
@@ -2269,7 +2273,7 @@ export default function App() {
 
                 {/* MESA DE CASINO (REDISEÑO OSCURO) */}
                 <div className="bg-gray-900 p-8 rounded-3xl border border-gray-800 shadow-[0_0_40px_rgba(0,0,0,0.6)] relative overflow-hidden backdrop-blur-sm">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-yellow-500 to-transparent opacity-50"></div>
+                  <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-transparent via-yellow-500 to-transparent opacity-50"></div>
                   <h3 className="text-xl font-black text-white mb-6 text-center uppercase tracking-[0.2em] border-b border-gray-800 pb-4">Haz tu Apuesta</h3>
 
                   {/* SALDO ACTUAL */}
@@ -2419,7 +2423,7 @@ export default function App() {
                   <div className="max-w-6xl mx-auto bg-gray-900/40 border border-gray-800 rounded-3xl overflow-hidden shadow-2xl">
                     <div className="relative h-64 md:h-96">
                       <img src={game?.headerImg} className="w-full h-full object-cover" alt="" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/20 to-transparent"></div>
+                      <div className="absolute inset-0 bg-linear-to-t from-gray-950 via-gray-950/20 to-transparent"></div>
                       <button
                         onClick={() => {
                           setSelectedSingleId(null);
@@ -2648,7 +2652,7 @@ export default function App() {
                                   {!currentReview.noVote && (
                                     <div className="text-center mb-6">
                                       <span className="text-6xl font-black text-white">{currentReview.note.toFixed(1)}</span>
-                                      <span className="text-2xl font-bold text-gray-600 block mt-1 uppercase tracking-widest text-xs">{getExtendedLabel(currentReview.note)}</span>
+                                      <span className="text-2xl font-bold text-gray-600 block mt-1 uppercase tracking-widest">{getExtendedLabel(currentReview.note)}</span>
                                     </div>
                                   )}
 
@@ -2711,7 +2715,7 @@ export default function App() {
 
                               {/* DERECHA: MEDIA GLOBAL */}
                               <div className="bg-gray-900 p-8 md:p-12 rounded-3xl border border-gray-800 flex flex-col items-center justify-center text-center shadow-2xl relative overflow-hidden">
-                                <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/10 to-transparent"></div>
+                                <div className="absolute inset-0 bg-linear-to-br from-indigo-900/10 to-transparent"></div>
                                 <h4 className="text-gray-500 font-black uppercase text-[12px] tracking-[0.3em] mb-8 relative z-10">Puntuación del Tribunal</h4>
                                 {globalAverage === null ? (
                                   <div className="flex flex-col items-center gap-4 relative z-10 transition-all animate-in zoom-in duration-500">
@@ -2744,12 +2748,12 @@ export default function App() {
                                    if (r && !r.noVote) {
                                      return (
                                        <div key={player} className="bg-gray-900/60 p-6 rounded-2xl border border-gray-800 flex flex-col md:flex-row gap-6 shadow-xl transition-all hover:border-indigo-500/30">
-                                         <div className="w-full md:w-32 flex-shrink-0 flex flex-col items-center justify-center py-4 bg-gray-950 rounded-xl border border-gray-800/80">
+                                         <div className="w-full md:w-32 shrink-0 flex flex-col items-center justify-center py-4 bg-gray-950 rounded-xl border border-gray-800/80">
                                            <div className="w-12 h-12 rounded-full bg-indigo-900/50 flex items-center justify-center mb-3">
                                               <Users className="w-6 h-6 text-indigo-400" />
                                            </div>
                                            <span className="font-black text-white mb-2">{player}</span>
-                                           <div className="text-3xl font-black leading-none bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">{r.note.toFixed(1)}</div>
+                                           <div className="text-3xl font-black leading-none bg-clip-text text-transparent bg-linear-to-b from-white to-gray-400">{r.note.toFixed(1)}</div>
                                            <span className="text-[9px] uppercase tracking-widest text-indigo-400 font-bold mt-2 text-center px-2">{getExtendedLabel(r.note)}</span>
                                          </div>
                                          <div className="flex-1 flex flex-col">
@@ -2938,7 +2942,7 @@ export default function App() {
                         }}
                         className="group cursor-pointer bg-gray-900/40 rounded-3xl overflow-hidden border border-gray-800 hover:border-indigo-500/50 transition-all duration-300 shadow-xl hover:shadow-indigo-500/10 flex flex-col h-full hover:scale-[1.02]"
                       >
-                        <div className="aspect-[3/4] overflow-hidden relative shadow-inner">
+                        <div className="aspect-3/4 overflow-hidden relative shadow-inner">
                           <img
                             src={game.img}
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
