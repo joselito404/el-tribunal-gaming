@@ -148,6 +148,10 @@ export default function App() {
   const [discordEnabled, setDiscordEnabled] = useState(true);
   const [playerChips, setPlayerChips] = useState({ Jose: 0, Mario: 0, Iván: 0, Carmen: 0, Lázaro: 0, Alejandro: 0 });
   const [isSaving, setIsSaving] = useState(false);
+  const [passwords, setPasswords] = useState({});
+  const [loginPlayer, setLoginPlayer] = useState(null);
+  const [inputPassword, setInputPassword] = useState('');
+  const [loginError, setLoginError] = useState('');
 
 
   const spinWheel = async () => {
@@ -340,11 +344,22 @@ export default function App() {
       setUserReviews(dbSingleReviews);
     });
 
+    // Sincronización de Contraseñas
+    const passwordsRef = collection(db, 'votos-gaming', 'data', 'grupo_passwords');
+    const unsubscribePasswords = onSnapshot(passwordsRef, (snapshot) => {
+      const dbPasswords = {};
+      snapshot.forEach(docSnap => {
+        if (PLAYERS.includes(docSnap.id)) dbPasswords[docSnap.id] = docSnap.data().password;
+      });
+      setPasswords(dbPasswords);
+    });
+
     return () => {
       unsubscribe();
       unsubscribeEvals();
       unsubscribeChips();
       unsubscribeSingle();
+      unsubscribePasswords();
     };
   }, [user]);
 
@@ -577,6 +592,34 @@ export default function App() {
   // RENDER: PANTALLA DE SELECCIÓN DE PERFIL (Forzada)
   // ----------------------------------------------------------------------------
   if (!currentPlayer && view === 'voting') {
+    const handleLoginSubmit = async (e) => {
+      e.preventDefault();
+      if (!loginPlayer) return;
+
+      if (!passwords[loginPlayer]) {
+        if (inputPassword.trim() === '') {
+          setLoginError('La contraseña no puede estar vacía.');
+          return;
+        }
+        try {
+          const playerDocRef = doc(db, 'votos-gaming', 'data', 'grupo_passwords', loginPlayer);
+          await setDoc(playerDocRef, { password: inputPassword }, { merge: true });
+          setCurrentPlayer(loginPlayer);
+          setLoginPlayer(null);
+        } catch (error) {
+          console.error("Error guardando contraseña:", error);
+          setLoginError('Error de conexión.');
+        }
+      } else {
+        if (inputPassword === passwords[loginPlayer]) {
+          setCurrentPlayer(loginPlayer);
+          setLoginPlayer(null);
+        } else {
+          setLoginError('Contraseña incorrecta.');
+        }
+      }
+    };
+
     return (
       <div className="min-h-screen bg-gray-950 flex flex-col items-center justify-center p-6 text-white">
         <div className="bg-gray-900 border border-gray-800 rounded-3xl p-8 md:p-12 w-full max-w-2xl text-center shadow-2xl">
@@ -584,23 +627,63 @@ export default function App() {
           <h1 className="text-4xl md:text-5xl font-black mb-4 bg-clip-text text-transparent bg-linear-to-r from-indigo-400 to-purple-500">
             Identificación Requerida
           </h1>
-          <p className="text-gray-400 text-lg mb-10">
-            ¿Quién eres? Selecciona tu perfil para entrar en la sala de votación del Tribunal.
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            {PLAYERS.map(p => (
-              <button
-                key={p}
-                onClick={() => setCurrentPlayer(p)}
-                className="group relative px-6 py-6 rounded-2xl bg-gray-800 hover:bg-indigo-600 transition-all duration-300 border border-gray-700 hover:border-indigo-400 overflow-hidden"
-              >
-                <div className="relative z-10 flex flex-col items-center gap-2">
-                  <Users className="w-8 h-8 text-gray-500 group-hover:text-white transition-colors" />
-                  <span className="text-xl font-bold text-gray-300 group-hover:text-white transition-colors">{p}</span>
-                </div>
-              </button>
-            ))}
-          </div>
+          
+          {!loginPlayer ? (
+            <>
+              <p className="text-gray-400 text-lg mb-10">
+                ¿Quién eres? Selecciona tu perfil para entrar en la sala de votación del Tribunal.
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                {PLAYERS.map(p => (
+                  <button
+                    key={p}
+                    onClick={() => {
+                      setLoginPlayer(p);
+                      setInputPassword('');
+                      setLoginError('');
+                    }}
+                    className="group relative px-6 py-6 rounded-2xl bg-gray-800 hover:bg-indigo-600 transition-all duration-300 border border-gray-700 hover:border-indigo-400 overflow-hidden"
+                  >
+                    <div className="relative z-10 flex flex-col items-center gap-2">
+                      <Users className="w-8 h-8 text-gray-500 group-hover:text-white transition-colors" />
+                      <span className="text-xl font-bold text-gray-300 group-hover:text-white transition-colors">{p}</span>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </>
+          ) : (
+            <form onSubmit={handleLoginSubmit} className="max-w-sm mx-auto">
+              <p className="text-gray-300 text-lg mb-6">
+                Hola, <span className="font-bold text-white">{loginPlayer}</span>.
+                {!passwords[loginPlayer] ? ' Crea tu contraseña para proteger tu perfil.' : ' Introduce tu contraseña.'}
+              </p>
+              <input
+                type="password"
+                autoFocus
+                placeholder="Tu contraseña secreta"
+                className="w-full bg-gray-950 border border-gray-700 text-white font-bold px-4 py-3 rounded-xl focus:border-indigo-500 outline-none mb-4 text-center text-lg tracking-widest"
+                value={inputPassword}
+                onChange={(e) => setInputPassword(e.target.value)}
+              />
+              {loginError && <p className="text-red-500 font-bold mb-4">{loginError}</p>}
+              <div className="flex gap-4 mt-6">
+                <button
+                  type="button"
+                  onClick={() => setLoginPlayer(null)}
+                  className="flex-1 px-4 py-3 bg-gray-800 hover:bg-gray-700 text-gray-300 rounded-xl font-bold transition-all"
+                >
+                  Volver
+                </button>
+                <button
+                  type="submit"
+                  className="flex-1 px-4 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-bold transition-all shadow-[0_0_20px_rgba(79,70,229,0.3)]"
+                >
+                  Entrar
+                </button>
+              </div>
+            </form>
+          )}
         </div>
       </div>
     );
@@ -643,7 +726,7 @@ export default function App() {
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-linear-to-br from-indigo-400 via-purple-400 to-pink-500 pb-2 mb-4 pt-8 md:pt-0 tracking-tight text-center">
-            El Tribunal Gaming <span className="text-pink-500 text-2xl md:text-3xl">v6.8.0</span>
+            El Tribunal Gaming <span className="text-pink-500 text-2xl md:text-3xl">v6.9.0</span>
           </h1>
           <p className="text-gray-400 text-lg md:text-xl font-medium text-center">Temporada {mode === 'coop' ? 'Cooperativa' : 'Individual'} 2026</p>
         </header>
@@ -679,7 +762,7 @@ export default function App() {
                 </button>
               </nav>
               <div className="mt-auto p-6 border-t border-gray-800">
-                <p className="text-[10px] font-black text-gray-600 uppercase tracking-widest text-center">Tribunal Gaming Engine v6.8.0</p>
+                <p className="text-[10px] font-black text-gray-600 uppercase tracking-widest text-center">Tribunal Gaming Engine v6.9.0</p>
               </div>
             </div>
           </div>
@@ -1072,6 +1155,22 @@ export default function App() {
           <div className="bg-gray-900/50 backdrop-blur-xl rounded-3xl p-6 md:p-10 shadow-2xl border border-gray-800 max-w-4xl mx-auto text-gray-300">
             <h2 className="text-3xl font-black text-white mb-8 border-b border-gray-800 pb-4">Bitácora de Versiones</h2>
             <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-linear-to-b before:from-orange-500/50 before:via-gray-800/50 before:to-gray-800/20">
+
+              {/* v6.9.0 */}
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-gray-900 bg-indigo-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 relative z-10">
+                  <CheckCircle className="w-5 h-5" />
+                </div>
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-gray-800/60 p-5 md:p-8 rounded-3xl border border-indigo-500/30 shadow-[0_0_20px_rgba(99,102,241,0.1)] transition-all">
+                  <div className="flex items-center justify-between mb-1">
+                    <h3 className="font-bold text-lg text-white">v6.9.0 - Seguridad y Nuevo Integrante</h3>
+                    <span className="text-xs text-gray-500 font-bold px-2 py-1 bg-gray-800 rounded-lg whitespace-nowrap">24 ABR 2026</span>
+                  </div>
+                  <p className="text-sm text-gray-400 mt-2">
+                    Incorporación de Víctor como miembro oficial del Tribunal. Implementado el sistema de contraseñas de seguridad por perfil, permitiendo a cada OG blindar su historial de votos y reseñas.
+                  </p>
+                </div>
+              </div>
 
               {/* v6.8.0 */}
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
@@ -1989,6 +2088,8 @@ export default function App() {
                   </ul>
                 </div>
               </div>
+
+
 
               {/* v2.7.3 */}
               <div className="relative flex items-start justify-between md:justify-normal md:odd:flex-row-reverse group">

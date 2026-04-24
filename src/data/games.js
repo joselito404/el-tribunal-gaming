@@ -79,7 +79,7 @@ export const GAMES = RAW_GAMES.map(g => ({
   headerImage: g.customImage || `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${g.steamId}/header.jpg`
 }));
 
-export const PLAYERS = ['Jose', 'Mario', 'Iván', 'Carmen', 'Lázaro', 'Alejandro'];
+export const PLAYERS = ['Jose', 'Mario', 'Iván', 'Carmen', 'Lázaro', 'Alejandro', 'Víctor'];
 
 
 
